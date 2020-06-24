@@ -73,13 +73,14 @@
         android:id="@+id/Timer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:layout_margin="20dp"
+        android:textColor="#00f"
+        android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.31" />
-
+        app:layout_constraintVertical_bias="0.35000002" />
     <Button
         android:id="@+id/StopWatchBackHome"
         android:layout_width="wrap_content"

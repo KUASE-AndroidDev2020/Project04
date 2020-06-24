@@ -42,7 +42,7 @@ public class StopWatchActivity extends AppCompatActivity {
         count = 0;
         period = 100;
 
-        timerText = findViewById(R.id.timerButton);
+        timerText = findViewById(R.id.Timer);
         timerText.setText(dataFormat.format(0));
 
         Button startButton = findViewById(R.id.StopWatchStartButton);
