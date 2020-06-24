@@ -13,7 +13,7 @@ import android.widget.TextView;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
 
-public class MainActivity extends AppCompatActivity {
+public class StopWatchActivity extends AppCompatActivity {
 
     private Handler handler = new Handler();
 
