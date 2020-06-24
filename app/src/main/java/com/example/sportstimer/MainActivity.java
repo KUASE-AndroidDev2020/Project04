@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView timerButton = findViewById(R.id.timerButton); // class 2
+        TextView timerButton = findViewById(R.id.timerButton);
         timerButton.setOnClickListener(this);
 
         TextView intervalButton = findViewById(R.id.intervalButton);
@@ -40,6 +40,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent toStopW = new Intent(this, StopWatchActivity.class);
             startActivity(toStopW);
             break;
-    }
+        }
     }
 }
