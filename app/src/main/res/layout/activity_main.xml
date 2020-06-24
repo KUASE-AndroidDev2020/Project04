@@ -34,7 +34,7 @@
         app:layout_constraintVertical_bias="0.445" />
 
     <TextView
-        android:id="@+id/Interval"
+        android:id="@+id/intervalButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Interval"
@@ -47,7 +47,7 @@
         app:layout_constraintVertical_bias="0.6" />
 
     <TextView
-        android:id="@+id/stopwatch"
+        android:id="@+id/stopwatchButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Stop Watch"
