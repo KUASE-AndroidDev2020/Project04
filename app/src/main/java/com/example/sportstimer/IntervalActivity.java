@@ -22,7 +22,7 @@ public class IntervalActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_interval);
     }
-
+*/
     public void IntervalBackHome(View view){
         Intent toBackHome = new Intent(this,MainActivity.class);
         startActivity(toBackHome);
@@ -43,11 +43,11 @@ public class IntervalActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_interval);
-        mEditTextInput = findViewById(R.id.);
-        mTextViewCountDown = findViewById(R.id.);
-        mButtonSet = findViewById(R.id.);
-        mButtonStartPause = findViewById(R.id.);
-        mButtonReset = findViewById(R.id.);
+        mEditTextInput = findViewById(R.id.minute_input);
+        mTextViewCountDown = findViewById(R.id.Clock);
+        mButtonSet = findViewById(R.id.IntervalSaveButton);
+        mButtonStartPause = findViewById(R.id.IntervalStartButton);
+        mButtonReset = findViewById(R.id.Reset_button);
 
         mButtonSet.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -194,6 +194,4 @@ public class IntervalActivity extends AppCompatActivity {
             }
         }
     }
-    
-    */
 }
