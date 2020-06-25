@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     switch(v.getId()) {
         case R.id.timerButton:
             Intent toTimer = new Intent(this, TimerActivity.class);
-            startActivity(toTimer);//data here
+            startActivity(toTimer);
             break;
 
         case R.id.intervalButton:
@@ -41,5 +41,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(toStopW);
             break;
         }
-    }
+    };
 }
