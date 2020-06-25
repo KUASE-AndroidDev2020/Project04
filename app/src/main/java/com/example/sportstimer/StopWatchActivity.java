@@ -64,7 +64,7 @@ public class StopWatchActivity extends AppCompatActivity {
             }
         });
     }
-    
+
     public void StopWatchBackHome(View view){
         Intent toBackHome = new Intent(this,MainActivity.class);
         startActivity(toBackHome);
