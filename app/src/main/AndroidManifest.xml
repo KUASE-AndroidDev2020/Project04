@@ -10,6 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MyFavoriteActivity"></activity>
+        <activity android:name=".IntervalActivity"></activity>
+        <activity android:name=".StopWatchActivity"></activity>
         <activity android:name=".TimerActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
