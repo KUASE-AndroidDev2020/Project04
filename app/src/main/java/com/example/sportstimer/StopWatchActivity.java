@@ -53,9 +53,18 @@ public class StopWatchActivity extends AppCompatActivity {
             }
         });
 
-        // タイマー終了
+        //タイマーストップ
         Button stopButton = findViewById(R.id.StopWatchStopButton);
         stopButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                handler.removeCallbacks(runnable);
+            }
+        } );
+
+        // タイマーリセット
+        Button resetButton = findViewById(R.id.StopWatchResetButton);
+        resetButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 handler.removeCallbacks(runnable);
