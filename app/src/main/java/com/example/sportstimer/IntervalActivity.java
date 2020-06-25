@@ -17,7 +17,7 @@ import java.util.Locale;
 
 public class IntervalActivity extends AppCompatActivity {
 
-    @Override
+   /* @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_interval);
@@ -194,4 +194,6 @@ public class IntervalActivity extends AppCompatActivity {
             }
         }
     }
+    
+    */
 }
