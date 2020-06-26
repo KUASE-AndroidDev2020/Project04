@@ -23,7 +23,7 @@ public class TimerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timer);
     }
-
+*/
     public void TimerBackHome(View view){
         Intent toBackHome = new Intent(this,MainActivity.class);
         startActivity(toBackHome);
@@ -44,11 +44,11 @@ public class TimerActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timer);
-        mEditTextInput = findViewById(R.id.);
-        mTextViewCountDown = findViewById(R.id.);
-        mButtonSet = findViewById(R.id.);
-        mButtonStartPause = findViewById(R.id.);
-        mButtonReset = findViewById(R.id.);
+        mEditTextInput = findViewById(R.id.Input_timer);
+        mTextViewCountDown = findViewById(R.id.ClockOne);
+        mButtonSet = findViewById(R.id.TimerSetButton);
+        mButtonStartPause = findViewById(R.id.StartButton);
+        mButtonReset = findViewById(R.id.TimerCancelButton);
 
         mButtonSet.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -195,6 +195,4 @@ public class TimerActivity extends AppCompatActivity {
             }
         }
     }
-
-  */
 }
