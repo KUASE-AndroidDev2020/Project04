@@ -67,7 +67,11 @@ public class StopWatchActivity extends AppCompatActivity {
         stopButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
+                elapsedTime += SystemClock.elapsedRealtime() - startTime;
                 handler.removeCallbacks(runnable);
+
+
+
             }
         } );
 
@@ -100,7 +104,7 @@ public class StopWatchActivity extends AppCompatActivity {
                 timerText.setText(dataFormat.format(0));
                 count = 0;
                 timerLabel.setText(dataFormat.format(0));
-                t = 0;
+
             }
         });
     }
