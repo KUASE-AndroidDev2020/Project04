@@ -44,11 +44,11 @@ public class IntervalActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_interval);
-        mEditTextInput = findViewById(R.id.minute_input);
-        mTextViewCountDown = findViewById(R.id.Clock);
-        mButtonSet = findViewById(R.id.IntervalSaveButton);
-        mButtonStartPause = findViewById(R.id.IntervalStartButton);
-        mButtonReset = findViewById(R.id.Reset_button);
+        mEditTextInput = findViewById(R.id.minute_input); // Input ID here
+        mTextViewCountDown = findViewById(R.id.Clock); // Button ID here
+        mButtonSet = findViewById(R.id.IntervalSaveButton); // Button ID same here
+        mButtonStartPause = findViewById(R.id.IntervalStartButton); // Button ID also here
+        mButtonReset = findViewById(R.id.Reset_button); // No need to explain
 
         mButtonSet.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,7 +67,6 @@ public class IntervalActivity extends AppCompatActivity {
                 mEditTextInput.setText("");
             }
         });
-        
         mButtonStartPause.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -85,11 +84,15 @@ public class IntervalActivity extends AppCompatActivity {
             }
         });
     }
+
+    //set timer part
     private void setTime(long milliseconds) {
         mStartTimeInMillis = milliseconds;
         resetTimer();
         closeKeyboard();
     }
+
+    //start timer part
     private void startTimer() {
         mEndTime = System.currentTimeMillis() + mTimeLeftInMillis;
         mCountDownTimer = new CountDownTimer(mTimeLeftInMillis, 1000) {
@@ -107,16 +110,22 @@ public class IntervalActivity extends AppCompatActivity {
         mTimerRunning = true;
         updateWatchInterface();
     }
+
+    //pause timer part
     private void pauseTimer() {
         mCountDownTimer.cancel();
         mTimerRunning = false;
         updateWatchInterface();
     }
+
+    //reset timer part
     private void resetTimer() {
         mTimeLeftInMillis = mStartTimeInMillis;
         updateCountDownText();
         updateWatchInterface();
     }
+
+    // countdown update text part
     private void updateCountDownText() {
         int hours = (int) (mTimeLeftInMillis / 1000) / 3600;
         int minutes = (int) ((mTimeLeftInMillis / 1000) % 3600) / 60;
@@ -131,6 +140,8 @@ public class IntervalActivity extends AppCompatActivity {
         }
         mTextViewCountDown.setText(timeLeftFormatted);
     }
+
+    // I don't know this part
     private void updateWatchInterface() {
         if (mTimerRunning) {
             mEditTextInput.setVisibility(View.INVISIBLE);
@@ -153,6 +164,7 @@ public class IntervalActivity extends AppCompatActivity {
             }
         }
     }
+
     private void closeKeyboard() {
         View view = this.getCurrentFocus();
         if (view != null) {
@@ -160,6 +172,8 @@ public class IntervalActivity extends AppCompatActivity {
             imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
         }
     }
+
+    // Stop timer part
     @Override
     protected void onStop() {
         super.onStop();
@@ -174,6 +188,8 @@ public class IntervalActivity extends AppCompatActivity {
             mCountDownTimer.cancel();
         }
     }
+
+    // on starting part
     @Override
     protected void onStart() {
         super.onStart();
