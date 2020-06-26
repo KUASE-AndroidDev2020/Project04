@@ -16,6 +16,14 @@ import android.widget.TextView;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
 
+/*import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;*/
+
+
+
 public class StopWatchActivity extends AppCompatActivity {
 
     private Handler handler = new Handler();
@@ -77,19 +85,21 @@ public class StopWatchActivity extends AppCompatActivity {
 
         //タイマーラップ
         startTime = SystemClock.elapsedRealtime();
+
         Button lapButton = findViewById(R.id.LapButton);
         timerLabel = findViewById(R.id.Timerlabel);
         lapButton.setOnClickListener(new View.OnClickListener(){
            @Override
            public void onClick(View v){
-                t = SystemClock.elapsedRealtime() - startTime + elapsedTime; // ミリ秒
+
+               t = SystemClock.elapsedRealtime() - startTime + elapsedTime; // ミリ秒
                 timerLabel.setText(dataFormat.format(t));
                 handler.removeCallbacks(runnable);
                 handler.postDelayed(runnable, 10);
 
 
 
-        handler.postDelayed(runnable, 10);
+       handler.postDelayed(runnable, 10);
 
             }
 
