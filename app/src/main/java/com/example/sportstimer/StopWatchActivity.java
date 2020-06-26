@@ -72,9 +72,9 @@ public class StopWatchActivity extends AppCompatActivity {
         } );
 
         //タイマーラップ
+        startTime = SystemClock.elapsedRealtime();
         Button lapButton = findViewById(R.id.LapButton);
         timerLabel = findViewById(R.id.Timerlabel);
-
         lapButton.setOnClickListener(new View.OnClickListener(){
            @Override
            public void onClick(View v){
@@ -82,6 +82,8 @@ public class StopWatchActivity extends AppCompatActivity {
                 timerLabel.setText(dataFormat.format(t));
                 handler.removeCallbacks(runnable);
                 handler.postDelayed(runnable, 10);
+
+
 
         handler.postDelayed(runnable, 10);
 
@@ -97,6 +99,8 @@ public class StopWatchActivity extends AppCompatActivity {
                 handler.removeCallbacks(runnable);
                 timerText.setText(dataFormat.format(0));
                 count = 0;
+                timerLabel.setText(dataFormat.format(0));
+                t = 0;
             }
         });
     }
