@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             break;
 
         case R.id.intervalButton:
-            Intent toInterval = new Intent(this, IntervalActivity.class);
+            Intent toInterval = new Intent(this, IntervalActivityHome.class);
             startActivity(toInterval);
             break;
 
