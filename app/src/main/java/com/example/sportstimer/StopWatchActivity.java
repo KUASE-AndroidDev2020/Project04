@@ -114,6 +114,7 @@ public class StopWatchActivity extends AppCompatActivity {
                 timerText.setText(dataFormat.format(0));
                 count = 0;
                 timerLabel.setText(dataFormat.format(0));
+                handler.removeCallbacks(runnable);
 
             }
         });
