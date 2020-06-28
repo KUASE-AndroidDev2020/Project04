@@ -14,6 +14,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.SimpleDateFormat;
 import java.util.Locale;
 
 public class TimerActivity extends AppCompatActivity {
@@ -35,6 +36,7 @@ public class TimerActivity extends AppCompatActivity {
     private Button mButtonStartPause;
     private Button mButtonReset;
     private CountDownTimer mCountDownTimer;
+    private SimpleDateFormat dataFormat = new SimpleDateFormat("mm:ss.S", Locale.US);
     private boolean mTimerRunning;
     private long mStartTimeInMillis;
     private long mTimeLeftInMillis;
@@ -112,7 +114,8 @@ public class TimerActivity extends AppCompatActivity {
         updateWatchInterface();
     }
     private void resetTimer() {
-        mTimeLeftInMillis = mStartTimeInMillis;
+        // mTimeLeftInMillis = mStartTimeInMillis;
+        mTextViewCountDown.setText(dataFormat.format(0));
         updateCountDownText();
         updateWatchInterface();
     }

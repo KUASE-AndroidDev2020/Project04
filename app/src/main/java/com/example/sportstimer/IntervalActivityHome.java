@@ -18,4 +18,8 @@ public class IntervalActivityHome extends AppCompatActivity {
         Intent toInterSet = new Intent(this,IntervalActivity.class);
         startActivity(toInterSet);
     }
+    public void IntervalHomeBackHomeButton(View view) {
+        Intent toBackHome = new Intent(this,MainActivity.class);
+        startActivity(toBackHome);
+    }
 }
