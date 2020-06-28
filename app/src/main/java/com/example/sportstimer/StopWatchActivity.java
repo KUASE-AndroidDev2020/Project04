@@ -95,11 +95,11 @@ public class StopWatchActivity extends AppCompatActivity {
                t = SystemClock.elapsedRealtime() - startTime + elapsedTime; // ミリ秒
                 timerLabel.setText(dataFormat.format(t));
                 handler.removeCallbacks(runnable);
-                handler.postDelayed(runnable, 10);
+                handler.postDelayed(runnable, 5);
 
 
 
-       handler.postDelayed(runnable, 10);
+       handler.postDelayed(runnable, 5);
 
             }
 
@@ -112,9 +112,8 @@ public class StopWatchActivity extends AppCompatActivity {
             public void onClick(View v) {
                 handler.removeCallbacks(runnable);
                 timerText.setText(dataFormat.format(0));
-                count = 0;
                 timerLabel.setText(dataFormat.format(0));
-                handler.removeCallbacks(runnable);
+                count = 0;
 
             }
         });
