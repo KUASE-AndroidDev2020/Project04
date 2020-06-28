@@ -11,14 +11,16 @@
         android:id="@+id/interval"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="serif"
         android:text="Interval"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#EF1919"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.089" />
+        app:layout_constraintVertical_bias="0.108" />
 
     <Button
         android:id="@+id/IntervalStartButton"
@@ -64,14 +66,13 @@
         android:id="@+id/IntervalBackHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Home"
+        android:layout_marginTop="16dp"
         android:onClick="IntervalBackHome"
-        app:layout_constraintBottom_toTopOf="@+id/interval"
+        android:text="Home"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/minute_input"
