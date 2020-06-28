@@ -28,7 +28,7 @@ public class StopWatchActivity extends AppCompatActivity {
 
     private Handler handler = new Handler();
 
-    private long startTime = -1;
+    private long startTime;
     private long elapsedTime = 0l;
 
     private Runnable runnable = new Runnable() {
@@ -84,7 +84,7 @@ public class StopWatchActivity extends AppCompatActivity {
         } );
 
         //タイマーラップ
-        startTime = System.currentTimeMillis();
+        startTime = SystemClock.elapsedRealtime();
 
         Button lapButton = findViewById(R.id.LapButton);
         timerLabel = findViewById(R.id.Timerlabel);
@@ -114,9 +114,6 @@ public class StopWatchActivity extends AppCompatActivity {
                 timerText.setText(dataFormat.format(0));
                 timerLabel.setText(dataFormat.format(0));
                 count = 0;
-                if(startTime == -1) {
-                    startTime = System.currentTimeMillis();
-                }
 
             }
         });
