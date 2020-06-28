@@ -21,6 +21,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         TextView stopwatchButton = findViewById(R.id.stopwatchButton);
         stopwatchButton.setOnClickListener(this);
+
+        TextView MyFavoriteButton = findViewById(R.id.MyFavoriteButton);
+        MyFavoriteButton.setOnClickListener(this);
     }
 
     @Override
@@ -39,6 +42,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         case R.id.stopwatchButton:
             Intent toStopW = new Intent(this, StopWatchActivity.class);
             startActivity(toStopW);
+            break;
+
+        case R.id.MyFavoriteButton:
+            Intent toMyfavorite = new Intent(this, MyFavoriteActivity.class);
+            startActivity(toMyfavorite);
             break;
         }
     };
