@@ -84,7 +84,7 @@ public class StopWatchActivity extends AppCompatActivity {
         } );
 
         //タイマーラップ
-        startTime = SystemClock.elapsedRealtime();
+        startTime = System.currentTimeMillis();
 
         Button lapButton = findViewById(R.id.LapButton);
         timerLabel = findViewById(R.id.Timerlabel);
