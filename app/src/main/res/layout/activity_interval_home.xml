@@ -18,17 +18,17 @@
         app:layout_constraintVertical_bias="0.545" />
 
     <Button
-        android:id="@+id/Addbutton"
+        android:id="@+id/AddSavebutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="Addbutton"
         android:text="Add and Save"
+        android:onClick="AddSavebutton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.963" />
+        app:layout_constraintVertical_bias="0.964" />
 
     <Button
         android:id="@+id/IntervalHomeBackHomeButton"
@@ -120,7 +120,7 @@
         android:layout_height="42dp"
         android:ems="10"
         android:inputType="numberDecimal"
-        app:layout_constraintBottom_toTopOf="@+id/Addbutton"
+        app:layout_constraintBottom_toTopOf="@+id/AddSavebutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"

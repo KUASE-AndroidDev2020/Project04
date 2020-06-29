@@ -23,9 +23,9 @@ public class IntervalActivity extends AppCompatActivity {
         setContentView(R.layout.activity_interval);
     }
 */
-    public void IntervalBackHome(View view){
-        Intent toBackHome = new Intent(this,MainActivity.class);
-        startActivity(toBackHome);
+    public void GiveUpButton(View view){
+        Intent toGoQuoteActivity = new Intent(this,QuoteActivity.class);
+        startActivity(toGoQuoteActivity);
     }
 
     //Setting timer code
