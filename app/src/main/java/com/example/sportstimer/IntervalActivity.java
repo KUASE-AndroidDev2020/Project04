@@ -46,7 +46,7 @@ public class IntervalActivity extends AppCompatActivity {
         setContentView(R.layout.activity_interval);
         mEditTextInput = findViewById(R.id.minute_input); // Input ID here
         mTextViewCountDown = findViewById(R.id.Clock); // Button ID here
-        mButtonSet = findViewById(R.id.IntervalSaveButton); // Button ID same here
+        //mButtonSet = findViewById(R.id.IntervalSaveButton); // Button ID same here
         mButtonStartPause = findViewById(R.id.IntervalStartButton); // Button ID also here
         mButtonReset = findViewById(R.id.Reset_button); // No need to explain
 
