@@ -15,14 +15,8 @@ import android.widget.Toast;
 
 import java.util.Locale;
 
-public class IntervalActivity extends AppCompatActivity {
+public class IntervalActivity extends AppCompatActivity{
 
-   /* @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_interval);
-    }
-*/
     public void GiveUpButton(View view){
         Intent toGoQuoteActivity = new Intent(this,QuoteActivity.class);
         startActivity(toGoQuoteActivity);
@@ -44,9 +38,9 @@ public class IntervalActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_interval);
-        mEditTextInput = findViewById(R.id.InputInterval); // Input ID here
+        //mEditTextInput = findViewById(R.id.InputInterval); // Input ID here
         mTextViewCountDown = findViewById(R.id.Clock); // Button ID here
-        mButtonSet = findViewById(R.id.AddSavebutton); // Button ID same here
+        //mButtonSet = findViewById(R.id.AddSavebutton); // Button ID same here
         mButtonStartPause = findViewById(R.id.IntervalStartButton); // Button ID also here
         mButtonReset = findViewById(R.id.Reset_button); // No need to explain
 
@@ -67,6 +61,7 @@ public class IntervalActivity extends AppCompatActivity {
                 mEditTextInput.setText("");
             }
         });
+
         mButtonStartPause.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -141,7 +136,7 @@ public class IntervalActivity extends AppCompatActivity {
         mTextViewCountDown.setText(timeLeftFormatted);
     }
 
-    // I don't know this part
+    // I don't know this part < Are you sure?
     private void updateWatchInterface() {
         if (mTimerRunning) {
             mEditTextInput.setVisibility(View.INVISIBLE);
