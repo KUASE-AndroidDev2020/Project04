@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#92D841"
     tools:context=".StopWatchActivity">
 
     <TextView
@@ -13,7 +14,7 @@
         android:fontFamily="serif"
         android:text="Stop Watch"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="#5D7D37"
+        android:textColor="#3B4A28"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
