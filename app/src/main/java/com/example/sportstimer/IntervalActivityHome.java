@@ -9,8 +9,6 @@ import android.widget.Button;
 
 public class IntervalActivityHome extends AppCompatActivity {
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,4 +24,5 @@ public class IntervalActivityHome extends AppCompatActivity {
         Intent toBackHome = new Intent(this,MainActivity.class);
         startActivity(toBackHome);
     }
+
 }
