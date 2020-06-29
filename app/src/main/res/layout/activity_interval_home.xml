@@ -18,7 +18,7 @@
         app:layout_constraintVertical_bias="0.545" />
 
     <Button
-        android:id="@+id/Addbutton"
+        android:id="@+id/AddSavebutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="Addbutton"
@@ -91,7 +91,7 @@
         app:layout_constraintVertical_bias="0.518" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/InputInterval"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -120,7 +120,7 @@
         android:layout_height="42dp"
         android:ems="10"
         android:inputType="numberDecimal"
-        app:layout_constraintBottom_toTopOf="@+id/Addbutton"
+        app:layout_constraintBottom_toTopOf="@+id/AddSavebutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
