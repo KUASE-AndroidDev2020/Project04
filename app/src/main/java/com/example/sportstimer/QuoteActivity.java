@@ -20,7 +20,7 @@ public class QuoteActivity extends AppCompatActivity {
     }
 
     public void TryAgainButton(View view){
-        Intent toGoInterval = new Intent(this,QuoteActivity.class);
+        Intent toGoInterval = new Intent(this,IntervalActivity.class);
         startActivity(toGoInterval);
     }
 }
