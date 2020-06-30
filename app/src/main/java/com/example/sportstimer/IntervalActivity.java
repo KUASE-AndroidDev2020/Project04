@@ -136,7 +136,7 @@ public class IntervalActivity extends AppCompatActivity{
         mTextViewCountDown.setText(timeLeftFormatted);
     }
 
-    // I don't know this part < Are you sure?
+    // I don't know this part < Are you serious?
     private void updateWatchInterface() {
         if (mTimerRunning) {
             mEditTextInput.setVisibility(View.INVISIBLE);

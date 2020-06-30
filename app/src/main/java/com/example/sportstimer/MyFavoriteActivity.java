@@ -19,4 +19,13 @@ public class MyFavoriteActivity extends AppCompatActivity {
         startActivity(toBackHome);
     }
 
+    public void SetTimerAddButton(View view){
+        Intent toSetTimer = new Intent(this,TimerSetActivity.class);
+        startActivity(toSetTimer);
+    }
+
+    public void MyFavoriteListIntervalAddButton(View view) {
+        Intent toFavoriteHome = new Intent(this,IntervalActivityHome.class);
+        startActivity(toFavoriteHome);
+    }
 }

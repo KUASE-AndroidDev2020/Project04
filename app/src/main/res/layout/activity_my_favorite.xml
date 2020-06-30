@@ -6,17 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".MyFavoriteActivity">
 
+    <View
+        android:id="@+id/view2"
+        android:layout_width="407dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/TimerMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IntervalMenu" />
+
     <ImageView
-        android:id="@+id/MyFavoriteListTimerAddButton"
+        android:id="@+id/SetTimerAddButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="MyFavoriteListTimerAddButton"
+        android:onClick="SetTimerAddButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintHorizontal_bias="0.067"
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.539"
+        app:layout_constraintVertical_bias="0.599"
         app:srcCompat="@android:drawable/ic_menu_add" />
 
     <TextView
@@ -61,14 +70,15 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/IntervalMenu"
-        android:layout_width="377dp"
-        android:layout_height="174dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="381dp"
+        android:layout_height="192dp"
+        android:layout_marginTop="20dp"
         android:background="#8ACFED"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView2"
@@ -78,10 +88,10 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintHorizontal_bias="0.451"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.537" />
+        app:layout_constraintVertical_bias="0.597" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/TimerMenu"
@@ -90,10 +100,10 @@
         android:background="#7AC5E9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.771" />
+        app:layout_constraintVertical_bias="0.878" />
 
     <ImageView
         android:id="@+id/MyFavoriteListIntervalAddButton"

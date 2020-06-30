@@ -17,7 +17,7 @@ public class IntervalActivityHome extends AppCompatActivity {
         setContentView(R.layout.activity_interval_home);
     }
 
-    public void AddSavebutton(View view) {
+    public void IntervalHomeDoItbutton(View view) {
         Intent toInterSet = new Intent(this,IntervalActivity.class);
         startActivity(toInterSet);
     }
@@ -25,5 +25,10 @@ public class IntervalActivityHome extends AppCompatActivity {
     public void IntervalHomeBackHomeButton(View view) {
         Intent toBackHome = new Intent(this,MainActivity.class);
         startActivity(toBackHome);
+    }
+
+    public void IntervalHomeSaveButton(View view){
+        Intent toMyFavorite = new Intent(this,MyFavoriteActivity.class);
+        startActivity(toMyFavorite);
     }
 }
