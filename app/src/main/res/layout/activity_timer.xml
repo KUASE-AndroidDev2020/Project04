@@ -81,8 +81,9 @@
 
     <TextView
         android:id="@+id/ClockOne"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="374dp"
+        android:layout_height="116dp"
+        android:gravity="center_horizontal|center_vertical"
         android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
         android:textColor="#2642DC"

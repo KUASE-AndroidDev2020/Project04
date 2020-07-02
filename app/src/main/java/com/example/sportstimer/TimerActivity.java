@@ -36,7 +36,6 @@ public class TimerActivity extends AppCompatActivity {
     private Button mButtonStartPause;
     private Button mButtonReset;
     private CountDownTimer mCountDownTimer;
-    private SimpleDateFormat dataFormat = new SimpleDateFormat("mm:ss.S", Locale.US);
     private boolean mTimerRunning;
     private long mStartTimeInMillis;
     private long mTimeLeftInMillis;
@@ -114,10 +113,7 @@ public class TimerActivity extends AppCompatActivity {
         updateWatchInterface();
     }
     private void resetTimer() {
-        // mTimeLeftInMillis = mStartTimeInMillis;
-        mTextViewCountDown.setText(dataFormat.format(0));
-        updateCountDownText();
-        updateWatchInterface();
+         mTimeLeftInMillis = mStartTimeInMillis;
     }
     private void updateCountDownText() {
         int hours = (int) (mTimeLeftInMillis / 1000) / 3600;
