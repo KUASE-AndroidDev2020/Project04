@@ -20,6 +20,12 @@ public class TimerSetActivity extends AppCompatActivity {
         Intent toMyFavorite = new Intent(this,MyFavoriteActivity.class);
         startActivity(toMyFavorite);
 
+        //String a =((EditText)findViewById(R.id.editText2)).getText().toString();
+        //((TextView)findViewById(R.id.textView19)).setText(a);
+
+        //String b =((EditText)findViewById(R.id.editText3)).getText().toString();
+        //((TextView)findViewById(R.id.textView24)).setText(b);
+
     }
 
     public void AddIntoMenu2Button(View v){
