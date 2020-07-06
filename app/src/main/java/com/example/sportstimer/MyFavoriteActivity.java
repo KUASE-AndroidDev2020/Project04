@@ -10,6 +10,8 @@ import android.widget.TextView;
 public class MyFavoriteActivity extends AppCompatActivity {
 
     TextView accessData;
+    TextView accessData2;
+    TextView accessData3;
 
     @Override
     protected void onCreate(Bundle savedTimerSet) {
@@ -24,18 +26,18 @@ public class MyFavoriteActivity extends AppCompatActivity {
         accessData.setText(txt1);
 
         //menu2の時間表示
-        accessData = (TextView)findViewById(R.id.textView19);
+        accessData2 = (TextView)findViewById(R.id.textView19);
         Bundle transferredData2 = getIntent().getExtras();
         String s2 = transferredData2.getString("time2");
         String txt2 = s2 + "min";
-        accessData.setText(txt2);
+        accessData2.setText(txt2);
 
         //menu3の時間表示
-        accessData = (TextView)findViewById(R.id.textView21);
+        accessData3 = (TextView)findViewById(R.id.textView21);
         Bundle transferredData3 = getIntent().getExtras();
         String s3 = transferredData3.getString("time3");
         String txt3 = s3 + "min";
-        accessData.setText(txt3);
+        accessData3.setText(txt3);
 
     }
 

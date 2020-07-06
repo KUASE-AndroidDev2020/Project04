@@ -25,6 +25,7 @@ public class TimerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_timer);
     }
 */
+
     public void TimerBackHome(View view){
         Intent toBackHome = new Intent(this,MainActivity.class);
         startActivity(toBackHome);
@@ -68,6 +69,7 @@ public class TimerActivity extends AppCompatActivity {
                 mEditTextInput.setText("");
             }
         });
+
         mButtonStartPause.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -78,6 +80,7 @@ public class TimerActivity extends AppCompatActivity {
                 }
             }
         });
+
         mButtonReset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -85,11 +88,13 @@ public class TimerActivity extends AppCompatActivity {
             }
         });
     }
+
     private void setTime(long milliseconds) {
         mStartTimeInMillis = milliseconds;
         resetTimer();
         closeKeyboard();
     }
+
     private void startTimer() {
         mEndTime = System.currentTimeMillis() + mTimeLeftInMillis;
         mCountDownTimer = new CountDownTimer(mTimeLeftInMillis, 1000) {
@@ -98,6 +103,7 @@ public class TimerActivity extends AppCompatActivity {
                 mTimeLeftInMillis = millisUntilFinished;
                 updateCountDownText();
             }
+
             @Override
             public void onFinish() {
                 mTimerRunning = false;
@@ -107,14 +113,17 @@ public class TimerActivity extends AppCompatActivity {
         mTimerRunning = true;
         updateWatchInterface();
     }
+
     private void pauseTimer() {
         mCountDownTimer.cancel();
         mTimerRunning = false;
         updateWatchInterface();
     }
+
     private void resetTimer() {
          mTimeLeftInMillis = mStartTimeInMillis;
     }
+
     private void updateCountDownText() {
         int hours = (int) (mTimeLeftInMillis / 1000) / 3600;
         int minutes = (int) ((mTimeLeftInMillis / 1000) % 3600) / 60;
@@ -129,6 +138,7 @@ public class TimerActivity extends AppCompatActivity {
         }
         mTextViewCountDown.setText(timeLeftFormatted);
     }
+
     private void updateWatchInterface() {
         if (mTimerRunning) {
             mEditTextInput.setVisibility(View.INVISIBLE);
@@ -151,6 +161,7 @@ public class TimerActivity extends AppCompatActivity {
             }
         }
     }
+
     private void closeKeyboard() {
         View view = this.getCurrentFocus();
         if (view != null) {
@@ -158,6 +169,7 @@ public class TimerActivity extends AppCompatActivity {
             imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
         }
     }
+
     @Override
     protected void onStop() {
         super.onStop();
@@ -172,6 +184,7 @@ public class TimerActivity extends AppCompatActivity {
             mCountDownTimer.cancel();
         }
     }
+
     @Override
     protected void onStart() {
         super.onStart();
