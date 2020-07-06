@@ -25,21 +25,21 @@ public class TimerSetActivity extends AppCompatActivity {
     public void AddIntoMenu1Button(View view) {
         Intent toMyFavorite = new Intent(this,MyFavoriteActivity.class);
         toMyFavorite.putExtra("time", userInput1.getText().toString());
-        toMyFavorite.putExtra("time", userInput2.getText().toString());
+        toMyFavorite.putExtra("activity", userInput2.getText().toString());
         startActivity(toMyFavorite);
     }
 
     public void AddIntoMenu2Button(View v){
         Intent toMyFavorite = new Intent(this,MyFavoriteActivity.class);
         toMyFavorite.putExtra("time", userInput1.getText().toString());
-        toMyFavorite.putExtra("time", userInput2.getText().toString());
+        toMyFavorite.putExtra("activity", userInput2.getText().toString());
         startActivity(toMyFavorite);
     }
 
     public void AddIntoMenu3Button(View v){
         Intent toMyFavorite = new Intent(this,MyFavoriteActivity.class);
         toMyFavorite.putExtra("time", userInput1.getText().toString());
-        toMyFavorite.putExtra("time", userInput2.getText().toString());
+        toMyFavorite.putExtra("activity", userInput2.getText().toString());
         startActivity(toMyFavorite);
     }
 
