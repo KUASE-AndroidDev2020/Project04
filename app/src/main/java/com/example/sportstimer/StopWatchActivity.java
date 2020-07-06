@@ -31,12 +31,22 @@ public class StopWatchActivity extends AppCompatActivity {
     private long startTime;
     private long elapsedTime = 0l;
 
+    // The following four variables are used to calculate lap
+    private long elapsedTotal;
+    private long lapPointPrevious;
+    private long lapPointNow;
+    private long lapDiff;
+
     private Runnable runnable = new Runnable() {
         @Override
         public void run() {
             count ++;
             timerText.setText(dataFormat.
                     format(count*period));
+
+            // We need to use total elapsed time to calculate lap
+            elapsedTotal = count*period;
+
             handler.postDelayed(this, period);
         }
     };
@@ -78,8 +88,6 @@ public class StopWatchActivity extends AppCompatActivity {
                 elapsedTime += SystemClock.elapsedRealtime() - startTime;
                 handler.removeCallbacks(runnable);
 
-
-
             }
         } );
 
@@ -91,18 +99,22 @@ public class StopWatchActivity extends AppCompatActivity {
         lapButton.setOnClickListener(new View.OnClickListener(){
            @Override
            public void onClick(View v){
-               // We want to show the exact time when the user click the lap button
-               // so just crab the text from timerText :p 
-               timerLabel.setText(timerText.getText());
+               // If We want to show the exact timing when the user click the lap button
+               // just crab the text from timerText :p
+               // timerLabel.setText(timerText.getText());
+
+               // If we want to show the elapsed time in one lap, this is how we do it
+               lapPointNow = elapsedTotal;
+               lapDiff = lapPointNow - lapPointPrevious;
+               timerLabel.setText(dataFormat.
+                       format(lapDiff));
+               lapPointPrevious = lapPointNow;
 
                /*t = SystemClock.elapsedRealtime() - startTime + elapsedTime; // ミリ秒
                 timerLabel.setText(dataFormat.format(t));
                 handler.removeCallbacks(runnable);
                 handler.postDelayed(runnable, 5);
-
-
-
-       handler.postDelayed(runnable, 5);*/
+                handler.postDelayed(runnable, 5);*/
 
             }
 
