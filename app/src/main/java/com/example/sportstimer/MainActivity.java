@@ -49,5 +49,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(toMyfavorite);
             break;
         }
-    };
+    }
 }
