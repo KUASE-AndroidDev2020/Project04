@@ -91,15 +91,18 @@ public class StopWatchActivity extends AppCompatActivity {
         lapButton.setOnClickListener(new View.OnClickListener(){
            @Override
            public void onClick(View v){
+               // We want to show the exact time when the user click the lap button
+               // so just crab the text from timerText :p 
+               timerLabel.setText(timerText.getText());
 
-               t = SystemClock.elapsedRealtime() - startTime + elapsedTime; // ミリ秒
+               /*t = SystemClock.elapsedRealtime() - startTime + elapsedTime; // ミリ秒
                 timerLabel.setText(dataFormat.format(t));
                 handler.removeCallbacks(runnable);
                 handler.postDelayed(runnable, 5);
 
 
 
-       handler.postDelayed(runnable, 5);
+       handler.postDelayed(runnable, 5);*/
 
             }
 
