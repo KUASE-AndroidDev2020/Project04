@@ -24,12 +24,19 @@ import java.util.Map;*/
 
 
 
+
 public class StopWatchActivity extends AppCompatActivity {
 
     private Handler handler = new Handler();
 
-    private long startTime;
-    private long elapsedTime = 0l;
+    //private long startTime;
+    //private long elapsedTime = 0l;
+
+    // The following four variables are used to calculate lap
+    private long elapsedTotal;
+    private long lapPointPrevious;
+    private long lapPointNow;
+    private long lapDiff;
 
     private Runnable runnable = new Runnable() {
         @Override
@@ -38,6 +45,10 @@ public class StopWatchActivity extends AppCompatActivity {
             timerText.setText(dataFormat.
                     format(count*period));
             handler.postDelayed(this, period);
+
+            // We need to use total elapsed time to calculate lap
+            elapsedTotal = count*period;
+
         }
     };
     private TextView timerLabel;
@@ -75,7 +86,7 @@ public class StopWatchActivity extends AppCompatActivity {
         stopButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                elapsedTime += SystemClock.elapsedRealtime() - startTime;
+               // elapsedTime += SystemClock.elapsedRealtime() - startTime;
                 handler.removeCallbacks(runnable);
 
 
@@ -84,22 +95,34 @@ public class StopWatchActivity extends AppCompatActivity {
         } );
 
         //タイマーラップ
-        startTime = SystemClock.elapsedRealtime();
+       // startTime = SystemClock.elapsedRealtime();
 
         Button lapButton = findViewById(R.id.LapButton);
         timerLabel = findViewById(R.id.Timerlabel);
         lapButton.setOnClickListener(new View.OnClickListener(){
            @Override
            public void onClick(View v){
+               // We want to show the exact time when the user click the lap button
+               // so just crab the text from timerText :p
+               timerLabel.setText(timerText.getText());
+               // If We want to show the exact timing when the user click the lap button
+               // just crab the text from timerText :p
+               // timerLabel.setText(timerText.getText());
 
-               t = SystemClock.elapsedRealtime() - startTime + elapsedTime; // ミリ秒
+               // If we want to show the elapsed time in one lap, this is how we do it
+               lapPointNow = elapsedTotal;
+               lapDiff = lapPointNow - lapPointPrevious;
+               timerLabel.setText(dataFormat.
+                       format(lapDiff));
+              //lapPointPrevious = lapPointNow;
+
+               /*t = SystemClock.elapsedRealtime() - startTime + elapsedTime; // ミリ秒
                 timerLabel.setText(dataFormat.format(t));
                 handler.removeCallbacks(runnable);
                 handler.postDelayed(runnable, 5);
 
 
-
-       handler.postDelayed(runnable, 5);
+       handler.postDelayed(runnable, 5);*/
 
             }
 
