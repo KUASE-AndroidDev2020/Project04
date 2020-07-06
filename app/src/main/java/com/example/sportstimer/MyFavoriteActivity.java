@@ -24,7 +24,6 @@ public class MyFavoriteActivity extends AppCompatActivity {
         //menu1の時間表示
         accessData1 = (TextView)findViewById(R.id.textView22);
         Bundle transferredData1 = getIntent().getExtras();
-        assert transferredData1 != null;
         String s1 = transferredData1.getString("time1");
         String txt1 = s1 + "min";
         accessData1.setText(txt1);

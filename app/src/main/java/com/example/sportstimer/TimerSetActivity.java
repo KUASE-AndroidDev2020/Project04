@@ -30,7 +30,7 @@ public class TimerSetActivity extends AppCompatActivity {
         userInput6 = (EditText)findViewById(R.id.editText3);
     }
 
-    public void AddIntoMenu1Button(View view) {
+    public void AddIntoMenu1Button(View v) {
         Intent toMyFavorite = new Intent(this,MyFavoriteActivity.class);
         toMyFavorite.putExtra("time1", userInput1.getText().toString());
         toMyFavorite.putExtra("activity1", userInput2.getText().toString());
@@ -44,18 +44,14 @@ public class TimerSetActivity extends AppCompatActivity {
         startActivity(toMyFavorite1);
     }
 
-    public void AddIntoMenu3Button(View v){
-        Intent toMyFavorite2 = new Intent(this,MyFavoriteActivity.class);
+    public void AddIntoMenu3Button(View v) {
+        Intent toMyFavorite2 = new Intent(this, MyFavoriteActivity.class);
         toMyFavorite2.putExtra("time3", userInput5.getText().toString());
         toMyFavorite2.putExtra("activity3", userInput6.getText().toString());
         startActivity(toMyFavorite2);
 
 
-
-
-
-
-
+    }
 
     public void SetTimerBackHomeButton(View view){
         Intent toBackHome = new Intent(this,MainActivity.class);
