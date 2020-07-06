@@ -28,8 +28,8 @@ public class StopWatchActivity extends AppCompatActivity {
 
     private Handler handler = new Handler();
 
-    private long startTime;
-    private long elapsedTime = 0l;
+    //private long startTime;
+    //private long elapsedTime = 0l;
 
     // The following four variables are used to calculate lap
     private long elapsedTotal;
@@ -85,14 +85,14 @@ public class StopWatchActivity extends AppCompatActivity {
         stopButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                elapsedTime += SystemClock.elapsedRealtime() - startTime;
+                // elapsedTime += SystemClock.elapsedRealtime() - startTime;
                 handler.removeCallbacks(runnable);
 
             }
         } );
 
         //タイマーラップ
-        startTime = SystemClock.elapsedRealtime();
+        //startTime = SystemClock.elapsedRealtime();
 
         Button lapButton = findViewById(R.id.LapButton);
         timerLabel = findViewById(R.id.Timerlabel);
