@@ -22,21 +22,20 @@
 
     <Button
         android:id="@+id/StartButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="183dp"
+        android:layout_height="76dp"
         android:background="@color/colorPrimary"
         android:text="Start"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.857"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.761" />
+        app:layout_constraintVertical_bias="0.758" />
 
     <Button
-        android:id="@+id/TimerSetButton"
+        android:id="@+id/TimerSetButton1"
         android:layout_width="114dp"
         android:layout_height="49dp"
         android:background="#4259EF"
@@ -48,22 +47,22 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.869" />
+        app:layout_constraintVertical_bias="0.612" />
 
     <Button
-        android:id="@+id/TimerCancelButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/TimerReset"
+        android:layout_width="108dp"
+        android:layout_height="45dp"
         android:background="#7538E1"
-        android:text="@android:string/cancel"
+        android:text="Reset"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.76" />
+        app:layout_constraintVertical_bias="0.903" />
 
     <Button
         android:id="@+id/TimerBackHome"
@@ -81,13 +80,13 @@
 
     <TextView
         android:id="@+id/ClockOne"
-        android:layout_width="374dp"
-        android:layout_height="116dp"
+        android:layout_width="390dp"
+        android:layout_height="136dp"
         android:gravity="center_horizontal|center_vertical"
         android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
         android:textColor="#2642DC"
-        app:layout_constraintBottom_toTopOf="@+id/TimerSetButton"
+        app:layout_constraintBottom_toTopOf="@+id/TimerSetButton1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Timer"
@@ -95,13 +94,15 @@
 
     <EditText
         android:id="@+id/Input_timer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="212dp"
+        android:layout_height="46dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/TimerSetButton"
+        app:layout_constraintBottom_toTopOf="@+id/TimerSetButton1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ClockOne" />
+        app:layout_constraintTop_toBottomOf="@+id/ClockOne"
+        app:layout_constraintVertical_bias="0.594" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

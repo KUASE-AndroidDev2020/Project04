@@ -14,7 +14,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.text.SimpleDateFormat;
 import java.util.Locale;
 
 public class TimerActivity extends AppCompatActivity {
@@ -48,9 +47,9 @@ public class TimerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_timer);
         mEditTextInput = findViewById(R.id.Input_timer);
         mTextViewCountDown = findViewById(R.id.ClockOne);
-        mButtonSet = findViewById(R.id.TimerSetButton);
+        mButtonSet = findViewById(R.id.TimerSetButton1);
         mButtonStartPause = findViewById(R.id.StartButton);
-        mButtonReset = findViewById(R.id.TimerCancelButton);
+        mButtonReset = findViewById(R.id.TimerReset);
 
         mButtonSet.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -121,7 +120,9 @@ public class TimerActivity extends AppCompatActivity {
     }
 
     private void resetTimer() {
-         mTimeLeftInMillis = mStartTimeInMillis;
+        mTimeLeftInMillis = mStartTimeInMillis;
+        updateCountDownText();
+        updateWatchInterface();
     }
 
     private void updateCountDownText() {
@@ -129,13 +130,7 @@ public class TimerActivity extends AppCompatActivity {
         int minutes = (int) ((mTimeLeftInMillis / 1000) % 3600) / 60;
         int seconds = (int) (mTimeLeftInMillis / 1000) % 60;
         String timeLeftFormatted;
-        if (hours > 0) {
-            timeLeftFormatted = String.format(Locale.getDefault(),
-                    "%d:%02d:%02d", hours, minutes, seconds);
-        } else {
-            timeLeftFormatted = String.format(Locale.getDefault(),
-                    "%02d:%02d", minutes, seconds);
-        }
+        timeLeftFormatted = String.format(Locale.getDefault(), "%02d:%02d:%02d", hours, minutes, seconds);
         mTextViewCountDown.setText(timeLeftFormatted);
     }
 
