@@ -12,6 +12,10 @@ public class TimerSetActivity extends AppCompatActivity {
 
     EditText userInput1;
     EditText userInput2;
+    EditText userInput3;
+    EditText userInput4;
+    EditText userInput5;
+    EditText userInput6;
 
     @Override
 
@@ -20,6 +24,10 @@ public class TimerSetActivity extends AppCompatActivity {
         setContentView(R.layout.activity_timer_set);
         userInput1 = (EditText)findViewById(R.id.editText2);
         userInput2 = (EditText)findViewById(R.id.editText3);
+        userInput3 = (EditText)findViewById(R.id.editText2);
+        userInput4 = (EditText)findViewById(R.id.editText3);
+        userInput5 = (EditText)findViewById(R.id.editText2);
+        userInput6 = (EditText)findViewById(R.id.editText3);
     }
 
     public void AddIntoMenu1Button(View view) {
@@ -30,17 +38,17 @@ public class TimerSetActivity extends AppCompatActivity {
     }
 
     public void AddIntoMenu2Button(View v){
-        Intent toMyFavorite = new Intent(this,MyFavoriteActivity.class);
-        toMyFavorite.putExtra("time", userInput1.getText().toString());
-        toMyFavorite.putExtra("activity", userInput2.getText().toString());
-        startActivity(toMyFavorite);
+        Intent toMyFavorite1 = new Intent(this,MyFavoriteActivity.class);
+        toMyFavorite1.putExtra("time", userInput3.getText().toString());
+        toMyFavorite1.putExtra("activity", userInput4.getText().toString());
+        startActivity(toMyFavorite1);
     }
 
     public void AddIntoMenu3Button(View v){
-        Intent toMyFavorite = new Intent(this,MyFavoriteActivity.class);
-        toMyFavorite.putExtra("time", userInput1.getText().toString());
-        toMyFavorite.putExtra("activity", userInput2.getText().toString());
-        startActivity(toMyFavorite);
+        Intent toMyFavorite2 = new Intent(this,MyFavoriteActivity.class);
+        toMyFavorite2.putExtra("time", userInput5.getText().toString());
+        toMyFavorite2.putExtra("activity", userInput6.getText().toString());
+        startActivity(toMyFavorite2);
     }
 
     public void SetTimerBackHomeButton(View view){
@@ -58,6 +66,4 @@ public class TimerSetActivity extends AppCompatActivity {
         ((TextView)findViewById(R.id.textView12)).setText(s);
     }
 }
-
-
 
