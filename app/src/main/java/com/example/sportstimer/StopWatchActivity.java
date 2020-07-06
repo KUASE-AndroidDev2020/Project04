@@ -7,7 +7,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Bundle;
-import android.os.SystemClock;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
@@ -15,13 +14,6 @@ import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
 import java.util.Locale;
-
-/*import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;*/
-
 
 
 
@@ -86,7 +78,6 @@ public class StopWatchActivity extends AppCompatActivity {
         stopButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-               // elapsedTime += SystemClock.elapsedRealtime() - startTime;
                 handler.removeCallbacks(runnable);
 
 
@@ -95,7 +86,6 @@ public class StopWatchActivity extends AppCompatActivity {
         } );
 
         //タイマーラップ
-       // startTime = SystemClock.elapsedRealtime();
 
         Button lapButton = findViewById(R.id.LapButton);
         timerLabel = findViewById(R.id.Timerlabel);
@@ -114,15 +104,8 @@ public class StopWatchActivity extends AppCompatActivity {
                lapDiff = lapPointNow - lapPointPrevious;
                timerLabel.setText(dataFormat.
                        format(lapDiff));
-              //lapPointPrevious = lapPointNow;
+              lapPointPrevious = lapPointNow;
 
-               /*t = SystemClock.elapsedRealtime() - startTime + elapsedTime; // ミリ秒
-                timerLabel.setText(dataFormat.format(t));
-                handler.removeCallbacks(runnable);
-                handler.postDelayed(runnable, 5);
-
-
-       handler.postDelayed(runnable, 5);*/
 
             }
 
@@ -135,6 +118,7 @@ public class StopWatchActivity extends AppCompatActivity {
             public void onClick(View v) {
                 handler.removeCallbacks(runnable);
                 timerText.setText(dataFormat.format(0));
+               // timerLabel.setText(dataFormat.format(0));
                 timerLabel.setText(timerText.getText());
                 count = 0;
 
