@@ -18,26 +18,28 @@ public class MyFavoriteActivity extends AppCompatActivity {
         super.onCreate(savedTimerSet);
         setContentView(R.layout.activity_my_favorite);
 
+
         //menu1の時間表示
         accessData = (TextView)findViewById(R.id.textView22);
         Bundle transferredData1 = getIntent().getExtras();
-        String s1 = transferredData1.getString("time1");
+        String s1 = transferredData1.getString("time");
         String txt1 = s1 + "min";
         accessData.setText(txt1);
 
         //menu2の時間表示
         accessData2 = (TextView)findViewById(R.id.textView19);
         Bundle transferredData2 = getIntent().getExtras();
-        String s2 = transferredData2.getString("time2");
+        String s2 = transferredData2.getString("time");
         String txt2 = s2 + "min";
         accessData2.setText(txt2);
 
         //menu3の時間表示
         accessData3 = (TextView)findViewById(R.id.textView21);
         Bundle transferredData3 = getIntent().getExtras();
-        String s3 = transferredData3.getString("time3");
+        String s3 = transferredData3.getString("time");
         String txt3 = s3 + "min";
         accessData3.setText(txt3);
+
 
     }
 

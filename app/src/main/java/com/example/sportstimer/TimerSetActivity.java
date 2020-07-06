@@ -10,34 +10,36 @@ import android.widget.TextView;
 
 public class TimerSetActivity extends AppCompatActivity {
 
-    EditText userInput;
+    EditText userInput1;
     EditText userInput2;
-    EditText userInput3;
 
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timer_set);
-        userInput2 = (EditText)findViewById(R.id.editText2);
-        userInput3 = (EditText)findViewById(R.id.editText3);
+        userInput1 = (EditText)findViewById(R.id.editText2);
+        userInput2 = (EditText)findViewById(R.id.editText3);
     }
 
     public void AddIntoMenu1Button(View view) {
         Intent toMyFavorite = new Intent(this,MyFavoriteActivity.class);
-        toMyFavorite.putExtra("time1", userInput.getText().toString());
+        toMyFavorite.putExtra("time", userInput1.getText().toString());
+        toMyFavorite.putExtra("time", userInput2.getText().toString());
         startActivity(toMyFavorite);
     }
 
     public void AddIntoMenu2Button(View v){
         Intent toMyFavorite = new Intent(this,MyFavoriteActivity.class);
-        toMyFavorite.putExtra("time2", userInput2.getText().toString());
+        toMyFavorite.putExtra("time", userInput1.getText().toString());
+        toMyFavorite.putExtra("time", userInput2.getText().toString());
         startActivity(toMyFavorite);
     }
 
     public void AddIntoMenu3Button(View v){
         Intent toMyFavorite = new Intent(this,MyFavoriteActivity.class);
-        toMyFavorite.putExtra("time3", userInput3.getText().toString());
+        toMyFavorite.putExtra("time", userInput1.getText().toString());
+        toMyFavorite.putExtra("time", userInput2.getText().toString());
         startActivity(toMyFavorite);
     }
 
