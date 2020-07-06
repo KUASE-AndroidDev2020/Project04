@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 public class MyFavoriteActivity extends AppCompatActivity {
 
-    TextView accessData;
+    TextView accessData1;
     TextView accessData2;
     TextView accessData3;
     TextView accessData4;
@@ -22,37 +22,37 @@ public class MyFavoriteActivity extends AppCompatActivity {
         setContentView(R.layout.activity_my_favorite);
 
         //menu1の時間表示
-        accessData = (TextView)findViewById(R.id.textView22);
+        accessData1 = (TextView)findViewById(R.id.textView22);
         Bundle transferredData1 = getIntent().getExtras();
         String s1 = transferredData1.getString("time");
         String txt1 = s1 + "min";
-        accessData.setText(txt1);
+        accessData1.setText(txt1);
 
         //menu1のActivity表示
         accessData2 = (TextView)findViewById(R.id.textView27);
-        Bundle transferredData4 = getIntent().getExtras();
-        String s4 = transferredData4.getString("Activity");
-        accessData2.setText(s4);
+        Bundle transferredData2 = getIntent().getExtras();
+        String s2 = transferredData2.getString("Activity");
+        accessData2.setText(s2);
 
         //menu2の時間表示
         accessData3 = (TextView)findViewById(R.id.textView19);
-        Bundle transferredData2 = getIntent().getExtras();
-        String s2 = transferredData2.getString("time");
-        String txt2 = s2 + "min";
-        accessData3.setText(txt2);
-
-        //menu2のActivity表示
-        accessData4 = (TextView)findViewById(R.id.textView24);
-        Bundle transferredData5 = getIntent().getExtras();
-        String s5 = transferredData5.getString("Activity");
-        accessData4.setText(s5);
-
-        //menu3の時間表示
-        accessData5 = (TextView)findViewById(R.id.textView21);
         Bundle transferredData3 = getIntent().getExtras();
         String s3 = transferredData3.getString("time");
         String txt3 = s3 + "min";
-        accessData5.setText(txt3);
+        accessData3.setText(txt3);
+
+        //menu2のActivity表示
+        accessData4 = (TextView)findViewById(R.id.textView24);
+        Bundle transferredData4 = getIntent().getExtras();
+        String s4 = transferredData4.getString("Activity");
+        accessData4.setText(s4);
+
+        //menu3の時間表示
+        accessData5 = (TextView)findViewById(R.id.textView21);
+        Bundle transferredData5 = getIntent().getExtras();
+        String s5 = transferredData5.getString("time");
+        String txt5 = s5 + "min";
+        accessData5.setText(txt5);
 
         //menu3のActivity表示
         accessData6 = (TextView)findViewById(R.id.textView20);
