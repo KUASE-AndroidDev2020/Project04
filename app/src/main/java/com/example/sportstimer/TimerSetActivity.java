@@ -32,24 +32,30 @@ public class TimerSetActivity extends AppCompatActivity {
 
     public void AddIntoMenu1Button(View view) {
         Intent toMyFavorite = new Intent(this,MyFavoriteActivity.class);
-        toMyFavorite.putExtra("time", userInput1.getText().toString());
-        toMyFavorite.putExtra("activity", userInput2.getText().toString());
+        toMyFavorite.putExtra("time1", userInput1.getText().toString());
+        toMyFavorite.putExtra("activity1", userInput2.getText().toString());
         startActivity(toMyFavorite);
     }
 
     public void AddIntoMenu2Button(View v){
         Intent toMyFavorite1 = new Intent(this,MyFavoriteActivity.class);
-        toMyFavorite1.putExtra("time", userInput3.getText().toString());
-        toMyFavorite1.putExtra("activity", userInput4.getText().toString());
+        toMyFavorite1.putExtra("time2", userInput3.getText().toString());
+        toMyFavorite1.putExtra("activity2", userInput4.getText().toString());
         startActivity(toMyFavorite1);
     }
 
     public void AddIntoMenu3Button(View v){
         Intent toMyFavorite2 = new Intent(this,MyFavoriteActivity.class);
-        toMyFavorite2.putExtra("time", userInput5.getText().toString());
-        toMyFavorite2.putExtra("activity", userInput6.getText().toString());
+        toMyFavorite2.putExtra("time3", userInput5.getText().toString());
+        toMyFavorite2.putExtra("activity3", userInput6.getText().toString());
         startActivity(toMyFavorite2);
-    }
+
+
+
+
+
+
+
 
     public void SetTimerBackHomeButton(View view){
         Intent toBackHome = new Intent(this,MainActivity.class);

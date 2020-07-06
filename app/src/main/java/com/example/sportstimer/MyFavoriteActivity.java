@@ -24,40 +24,41 @@ public class MyFavoriteActivity extends AppCompatActivity {
         //menu1の時間表示
         accessData1 = (TextView)findViewById(R.id.textView22);
         Bundle transferredData1 = getIntent().getExtras();
-        String s1 = transferredData1.getString("time");
+        assert transferredData1 != null;
+        String s1 = transferredData1.getString("time1");
         String txt1 = s1 + "min";
         accessData1.setText(txt1);
 
         //menu1のActivity表示
         accessData2 = (TextView)findViewById(R.id.textView27);
         Bundle transferredData2 = getIntent().getExtras();
-        String s2 = transferredData2.getString("Activity");
+        String s2 = transferredData2.getString("Activity1");
         accessData2.setText(s2);
 
         //menu2の時間表示
         accessData3 = (TextView)findViewById(R.id.textView19);
         Bundle transferredData3 = getIntent().getExtras();
-        String s3 = transferredData3.getString("time");
+        String s3 = transferredData3.getString("time2");
         String txt3 = s3 + "min";
         accessData3.setText(txt3);
 
         //menu2のActivity表示
         accessData4 = (TextView)findViewById(R.id.textView24);
         Bundle transferredData4 = getIntent().getExtras();
-        String s4 = transferredData4.getString("Activity");
+        String s4 = transferredData4.getString("Activity2");
         accessData4.setText(s4);
 
         //menu3の時間表示
         accessData5 = (TextView)findViewById(R.id.textView21);
         Bundle transferredData5 = getIntent().getExtras();
-        String s5 = transferredData5.getString("time");
+        String s5 = transferredData5.getString("time3");
         String txt5 = s5 + "min";
         accessData5.setText(txt5);
 
         //menu3のActivity表示
         accessData6 = (TextView)findViewById(R.id.textView20);
         Bundle transferredData6 = getIntent().getExtras();
-        String s6 = transferredData6.getString("Activity");
+        String s6 = transferredData6.getString("Activity3");
         accessData6.setText(s6);
 
     }
