@@ -29,6 +29,10 @@ public class TimerActivity extends AppCompatActivity {
         Intent toBackHome = new Intent(this,MainActivity.class);
         startActivity(toBackHome);
     }
+    public void imageView8(View v){
+        Intent GoToTimerSetting = new Intent(this,TimerSetActivity.class);
+        startActivity(GoToTimerSetting);
+    }
 
     private EditText mEditTextInput;
     private TextView mTextViewCountDown;
