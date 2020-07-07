@@ -45,8 +45,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             break;
 
         case R.id.MyFavoriteButton:
-            Intent toMyfavorite = new Intent(this, MyFavoriteActivity.class);
-            startActivity(toMyfavorite);
+            Intent toMyFavorite = new Intent(this, MyFavoriteActivity.class);
+            startActivity(toMyFavorite);
             break;
         }
     }

@@ -68,4 +68,3 @@ public class TimerSetActivity extends AppCompatActivity {
         ((TextView)findViewById(R.id.textView12)).setText(s);
     }
 }
-
