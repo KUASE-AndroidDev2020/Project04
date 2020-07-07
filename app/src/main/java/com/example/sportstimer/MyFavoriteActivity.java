@@ -25,8 +25,7 @@ public class MyFavoriteActivity extends AppCompatActivity {
         accessData1 = (TextView)findViewById(R.id.textView22);
         Bundle transferredData1 = getIntent().getExtras();
         String s1 = transferredData1.getString("time1");
-        String txt1 = s1 + "min";
-        accessData1.setText(txt1);
+        accessData1.setText(s1);
 
         //menu1のActivity表示
         accessData2 = (TextView)findViewById(R.id.textView27);
@@ -38,8 +37,7 @@ public class MyFavoriteActivity extends AppCompatActivity {
         accessData3 = (TextView)findViewById(R.id.textView19);
         Bundle transferredData3 = getIntent().getExtras();
         String s3 = transferredData3.getString("time2");
-        String txt3 = s3 + "min";
-        accessData3.setText(txt3);
+        accessData3.setText(s3);
 
         //menu2のActivity表示
         accessData4 = (TextView)findViewById(R.id.textView24);
@@ -51,8 +49,7 @@ public class MyFavoriteActivity extends AppCompatActivity {
         accessData5 = (TextView)findViewById(R.id.textView21);
         Bundle transferredData5 = getIntent().getExtras();
         String s5 = transferredData5.getString("time3");
-        String txt5 = s5 + "min";
-        accessData5.setText(txt5);
+        accessData5.setText(s5);
 
         //menu3のActivity表示
         accessData6 = (TextView)findViewById(R.id.textView20);
