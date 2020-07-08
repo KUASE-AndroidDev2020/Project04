@@ -16,6 +16,8 @@ public class TimerSetActivity extends AppCompatActivity {
     EditText userInput4;
     EditText userInput5;
     EditText userInput6;
+    Boolean addTimer = true;
+
 
     @Override
 
@@ -34,6 +36,8 @@ public class TimerSetActivity extends AppCompatActivity {
         Intent toMyFavorite = new Intent(this,MyFavoriteActivity.class);
         toMyFavorite.putExtra("time1", userInput1.getText().toString());
         toMyFavorite.putExtra("activity1", userInput2.getText().toString());
+        // Notify MyFavoriteActivity that new timer is added
+        toMyFavorite.putExtra("addTimerMarker", addTimer);
         startActivity(toMyFavorite);
     }
 
@@ -41,6 +45,8 @@ public class TimerSetActivity extends AppCompatActivity {
         Intent toMyFavorite1 = new Intent(this,MyFavoriteActivity.class);
         toMyFavorite1.putExtra("time2", userInput3.getText().toString());
         toMyFavorite1.putExtra("activity2", userInput4.getText().toString());
+        // Notify MyFavoriteActivity that new timer is added
+        toMyFavorite1.putExtra("addTimerMarker", addTimer);
         startActivity(toMyFavorite1);
     }
 
@@ -48,9 +54,9 @@ public class TimerSetActivity extends AppCompatActivity {
         Intent toMyFavorite2 = new Intent(this, MyFavoriteActivity.class);
         toMyFavorite2.putExtra("time3", userInput5.getText().toString());
         toMyFavorite2.putExtra("activity3", userInput6.getText().toString());
+        // Notify MyFavoriteActivity that new timer is added
+        toMyFavorite2.putExtra("addTimerMarker", addTimer);
         startActivity(toMyFavorite2);
-
-
     }
 
     public void SetTimerBackHomeButton(View view){
