@@ -19,7 +19,7 @@ public class MyFavoriteActivity extends AppCompatActivity {
     // These boolean markers are used to indicate what actions need to be executed in onCreate()
     // set default values to "false"
     boolean addTimer = false;
-    boolean addFavorite = false;
+    boolean addInterval = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +31,7 @@ public class MyFavoriteActivity extends AppCompatActivity {
         if (transferredData != null) {
             // Get the value of the addTimer marker
             addTimer = transferredData.getBoolean("addTimerMarker");
-            
+
             // if the marker is set to "true", that means new timer is added in TimerSetActivity.java
             // only extract timer data when addTimer marker is true
             // otherwise you'll get an error because you are trying to get data from null
