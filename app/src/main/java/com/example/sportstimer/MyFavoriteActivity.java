@@ -16,8 +16,8 @@ public class MyFavoriteActivity extends AppCompatActivity {
     TextView accessData5;
     TextView accessData6;
     TextView accessData7;
-    //TextView accessData8;
-    //TextView accessData9;
+    TextView accessData8;
+    TextView accessData9;
 
     // These boolean markers are used to indicate what actions need to be executed in onCreate()
     // set default values to "false"
@@ -77,18 +77,28 @@ public class MyFavoriteActivity extends AppCompatActivity {
                 accessData6.setText(s6);
             }
         }
+
         Bundle transferredData2 = getIntent().getExtras();
         if (transferredData2 != null) {
-            addInterval = transferredData2.getBoolean("addIntervalMarker");
+            addInterval = transferredData2.getBoolean("addIntervalMarker2");
             if (addInterval == true) {
 
                 //Intervalのmenu1表示
                 accessData7 = (TextView) findViewById(R.id.textView46);
-                String s7 = transferredData.getString("SetInterval");
+                String s7 = transferredData.getString("SetInterval1");
                 accessData7.setText(s7);
+
+                //Intervalのmenu2表示
+                accessData8 = (TextView) findViewById(R.id.textView45);
+                String s8 = transferredData.getString("SetInterval2");
+                accessData8.setText(s8);
+
+                //Intervalのmenu3表示
+                accessData9 = (TextView) findViewById(R.id.textView37);
+                String s9 = transferredData.getString("SetInterval3");
+                accessData9.setText(s9);
             }
         }
-
     }
 
 
