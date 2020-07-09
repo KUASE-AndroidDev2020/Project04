@@ -71,6 +71,7 @@
         android:layout_marginTop="4dp"
         android:text="Home"
         android:onClick="TimerBackHome"
+        android:background="@drawable/homebutton"
         app:layout_constraintBottom_toTopOf="@+id/Timer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.049"
