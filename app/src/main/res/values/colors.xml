@@ -4,5 +4,9 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="btColor">#fcbf49</color>
-    <color name="atColor">#f4f1de</color>
+    <color name="atColor">#edf6f9</color>
+    <color name="TimerButton">#48bfe3</color>
+    <color name="IntervalButton">#e85d04</color>
+    <color name="StopwatchButton">#ef476f</color>
+    <color name="MyFavoriteButton">#83c5be</color>
 </resources>
