@@ -41,6 +41,7 @@ public class StopWatchActivity extends AppCompatActivity {
             // We need to use total elapsed time to calculate lap
             elapsedTotal = count*period;
 
+
         }
     };
     private TextView timerLabel;
@@ -52,7 +53,6 @@ public class StopWatchActivity extends AppCompatActivity {
 
 
     private int count, period;
-    long t=0l;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -101,6 +101,7 @@ public class StopWatchActivity extends AppCompatActivity {
 
                // If we want to show the elapsed time in one lap, this is how we do it
                lapPointNow = elapsedTotal;
+               // 二回目に00から引くことになる？
                lapDiff = lapPointNow - lapPointPrevious;
                timerLabel.setText(dataFormat.
                        format(lapDiff));
@@ -117,11 +118,12 @@ public class StopWatchActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 handler.removeCallbacks(runnable);
+                count = 0;
                 timerText.setText(dataFormat.format(0));
                // timerLabel.setText(dataFormat.format(0));
-                timerLabel.setText(timerText.getText());
-                count = 0;
-
+                //timerLabel.setText(timerText.getText());
+                timerLabel.setText("");
+                lapPointPrevious = 0l;
             }
         });
     }
