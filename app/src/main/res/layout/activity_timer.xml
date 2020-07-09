@@ -86,6 +86,7 @@
         android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
         android:textColor="#2642DC"
+        android:background="@drawable/round_button_green"
         app:layout_constraintBottom_toTopOf="@+id/TimerSetButton1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
