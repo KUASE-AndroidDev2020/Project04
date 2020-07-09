@@ -24,7 +24,7 @@
         android:id="@+id/StartButton"
         android:layout_width="183dp"
         android:layout_height="76dp"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/rounded_button"
         android:text="Start"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFFFFF"
