@@ -65,11 +65,12 @@ public class StopWatchActivity extends AppCompatActivity {
         timerText = findViewById(R.id.Timer);
         timerText.setText(dataFormat.format(0));
 
-        Button startButton = findViewById(R.id.StopWatchStartButton);
+        final Button startButton = findViewById(R.id.StopWatchStartButton);
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 handler.post(runnable);
+                startButton.setEnabled(false);
             }
         });
 
@@ -120,10 +121,9 @@ public class StopWatchActivity extends AppCompatActivity {
                 handler.removeCallbacks(runnable);
                 count = 0;
                 timerText.setText(dataFormat.format(0));
-               // timerLabel.setText(dataFormat.format(0));
-                //timerLabel.setText(timerText.getText());
                 timerLabel.setText("");
                 lapPointPrevious = 0l;
+                startButton.setEnabled(true);
             }
         });
     }
