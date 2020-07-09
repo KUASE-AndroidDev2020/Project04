@@ -17,7 +17,7 @@ public class IntervalActivityHome extends AppCompatActivity {
         setContentView(R.layout.activity_interval_home);
     }
 
-    public void IntervalHomeDoItbutton(View view) {
+    public void IntervalHomeDoItButton(View view) {
         Intent toInterSet = new Intent(this,IntervalActivity.class);
         startActivity(toInterSet);
     }
