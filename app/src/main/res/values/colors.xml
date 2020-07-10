@@ -13,8 +13,8 @@
 
     <!-- MainActivity button color -->
     <color name="TimerButton">#48bfe3</color>
-    <color name="IntervalButton">#e85d04</color>
-    <color name="StopwatchButton">#ef476f</color>
+    <color name="IntervalButton">#2a9d8f</color>
+    <color name="StopwatchButton">#e76f51</color>
     <color name="MyFavoriteButton">#83c5be</color>
 
     <!-- interval button color -->
@@ -26,4 +26,5 @@
     <color name="stopwatchStop">#f9c74f</color>
     <color name="stopwatchReset">#90be6d</color>
     <color name="stopwatchLap">#8338ec</color>
+    <color name="stopwatchTimer">#8338ec</color>
 </resources>

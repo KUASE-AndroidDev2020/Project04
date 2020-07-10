@@ -74,7 +74,7 @@
         android:gravity="center"
         android:text="Stop Watch"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="#8338ec"
+        android:textColor="#5e60ce"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
