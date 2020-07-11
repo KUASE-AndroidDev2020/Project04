@@ -56,8 +56,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.895"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.836" />
+        app:layout_constraintTop_toBottomOf="@+id/SetIntervalAddMenuButton"
+        app:layout_constraintVertical_bias="0.086" />
 
     <Button
         android:id="@+id/IntervalHomeBackHomeButton"
