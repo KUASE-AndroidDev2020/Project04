@@ -7,6 +7,9 @@
     <!-- experiment button color -->
     <color name="btColor">#fcbf49</color>
     <color name="atColor">#edf6f9</color>
+    <color name="ctColor">#98c1d9</color>
+    <color name="dtColor">#118ab2</color>
+    <color name="etColor">#faa307</color>
 
     <!-- All home button color -->
     <color name="home">#8d99ae</color>
