@@ -8,7 +8,7 @@
     tools:context=".StopWatchActivity">
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/EasterEgg"
         android:layout_width="111dp"
         android:layout_height="111dp"
         app:layout_constraintBottom_toBottomOf="parent"

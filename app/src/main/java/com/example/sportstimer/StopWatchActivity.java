@@ -4,6 +4,7 @@ package com.example.sportstimer;
 import androidx.appcompat.app.AppCompatActivity;
 //import android.support.v7.app.AppCompatActivity;
 
+import android.app.AutomaticZenRule;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Bundle;
@@ -29,6 +30,7 @@ public class StopWatchActivity extends AppCompatActivity {
     private long lapPointPrevious;
     private long lapPointNow;
     private long lapDiff;
+    private long lapmemory;
 
     private Runnable runnable = new Runnable() {
         @Override
@@ -66,11 +68,13 @@ public class StopWatchActivity extends AppCompatActivity {
         timerText.setText(dataFormat.format(0));
 
         final Button startButton = findViewById(R.id.StopWatchStartButton);
+        final Button lapButton = findViewById(R.id.LapButton);
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 handler.post(runnable);
                 startButton.setEnabled(false);
+                lapButton.setEnabled(true);
             }
         });
 
@@ -80,6 +84,7 @@ public class StopWatchActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 handler.removeCallbacks(runnable);
+                startButton.setEnabled(true);
 
 
 
@@ -88,7 +93,7 @@ public class StopWatchActivity extends AppCompatActivity {
 
         //タイマーラップ
 
-        Button lapButton = findViewById(R.id.LapButton);
+        //final Button lapButton = findViewById(R.id.LapButton);
         timerLabel = findViewById(R.id.Timerlabel);
         lapButton.setOnClickListener(new View.OnClickListener(){
            @Override
@@ -108,10 +113,13 @@ public class StopWatchActivity extends AppCompatActivity {
                        format(lapDiff));
               lapPointPrevious = lapPointNow;
 
-
-            }
-
+               //ラップ記録
+               //lapmemory = lapDiff;
+               //for (int i = 1; i < lapmemory; i++);
+               }
         });
+
+
 
         // タイマーリセット
         Button resetButton = findViewById(R.id.StopWatchResetButton);
@@ -124,6 +132,8 @@ public class StopWatchActivity extends AppCompatActivity {
                 timerLabel.setText("");
                 lapPointPrevious = 0l;
                 startButton.setEnabled(true);
+                lapButton.setEnabled(false);
+
             }
         });
     }
