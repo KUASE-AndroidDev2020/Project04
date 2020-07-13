@@ -138,8 +138,10 @@ public class StopWatchActivity extends AppCompatActivity {
         });
     }
 
-    public void onClick(View v) {
-        
+    public void EasterEgg(View v) {
+        Intent toEasterEggactivity = new Intent(this,activity_EasterEgg.class);
+        startActivity(toEasterEggactivity);
+
 
     }
 
