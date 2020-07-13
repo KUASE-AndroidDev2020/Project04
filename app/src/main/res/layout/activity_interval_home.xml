@@ -215,16 +215,13 @@
 
     <ImageView
         android:id="@+id/SetIntervalAddMenuButton"
-        android:layout_width="48dp"
-        android:layout_height="63dp"
+        android:layout_width="51dp"
+        android:layout_height="46dp"
         android:background="#2196F3"
         android:tint="#2E1064"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.878"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.694"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toEndOf="@+id/InputInterval"
         app:srcCompat="@android:drawable/stat_sys_upload" />
 
     <TextView
