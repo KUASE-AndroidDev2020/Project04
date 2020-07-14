@@ -90,6 +90,7 @@
         android:id="@+id/Clock"
         android:layout_width="199dp"
         android:layout_height="63dp"
+        android:background="#97E2EC"
         android:hint="now menu"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -116,18 +117,21 @@
         android:id="@+id/PastText"
         android:layout_width="142dp"
         android:layout_height="39dp"
+        android:background="#CBEDF1"
         android:hint="past menu"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.266" />
+        app:layout_constraintVertical_bias="0.254" />
 
     <TextView
         android:id="@+id/PastTexFutureView"
         android:layout_width="148dp"
         android:layout_height="39dp"
+        android:background="#9BE1EA"
         android:hint="next menu"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -145,10 +149,10 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintHorizontal_bias="0.186"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.27" />
+        app:layout_constraintVertical_bias="0.248" />
 
     <TextView
         android:id="@+id/textView15"
