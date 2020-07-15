@@ -11,9 +11,11 @@ import android.widget.EditText;
 public class IntervalActivityHome extends AppCompatActivity {
 
     Boolean addInterval = true;
+    Boolean addIntervalName = true;
     EditText userInput1;
     EditText userInput2;
     EditText userInput3;
+    EditText userInput4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,11 +24,14 @@ public class IntervalActivityHome extends AppCompatActivity {
         userInput1 = (EditText)findViewById(R.id.editText);
         userInput2 = (EditText)findViewById(R.id.editText);
         userInput3 = (EditText)findViewById(R.id.editText);
+        userInput4 = (EditText)findViewById(R.id.editText);
 
     }
 
     public void IntervalHomeDoItbutton(View view) {
         Intent toInterSet = new Intent(this,IntervalActivity.class);
+        toInterSet.putExtra("SetIntervalName",userInput4.getText().toString());
+        toInterSet.putExtra("addIntervalNameMarker",addIntervalName);
         startActivity(toInterSet);
     }
 
