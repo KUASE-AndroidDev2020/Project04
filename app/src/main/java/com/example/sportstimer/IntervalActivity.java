@@ -18,6 +18,10 @@ import java.util.Locale;
 public class IntervalActivity extends AppCompatActivity{
 
     TextView accessData8;
+    TextView accessData9;
+    TextView accessData10;
+    TextView accessData11;
+    TextView accessData12;
 
     boolean addIntervalName = false;
 
@@ -32,10 +36,30 @@ public class IntervalActivity extends AppCompatActivity{
             addIntervalName = transferredData3.getBoolean("addIntervalNameMarker");
             if (addIntervalName == true) {
 
+                //IntervalのPrepareを表示
+                accessData11 = (TextView) findViewById(R.id.textView43);
+                String s10 = transferredData3.getString("SetPrepare");
+                accessData11.setText(s10);
+
                 //Intervalのmenu名を表示
                 accessData8 = (TextView) findViewById(R.id.textView41);
                 String s7 = transferredData3.getString("SetIntervalName");
                 accessData8.setText(s7);
+
+                //IntervalのWorkOutを表示
+                accessData9 = (TextView) findViewById(R.id.Clock);
+                String s8 = transferredData3.getString("SetWorkOut");
+                accessData9.setText(s8);
+
+                //IntervalのRestを表示
+                accessData10 = (TextView) findViewById(R.id.PastTexFutureView);
+                String s9 = transferredData3.getString("SetRest");
+                accessData10.setText(s9);
+
+                //IntervalのLoopを表示
+                accessData12 = (TextView) findViewById(R.id.textView39);
+                String s11 = transferredData3.getString("SetLoop");
+                accessData12.setText(s11);
             }
         }
     }

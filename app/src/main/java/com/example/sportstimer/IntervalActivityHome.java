@@ -16,6 +16,10 @@ public class IntervalActivityHome extends AppCompatActivity {
     EditText userInput2;
     EditText userInput3;
     EditText userInput4;
+    EditText userInput5;
+    EditText userInput6;
+    EditText userInput7;
+    EditText userInput8;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,12 +29,20 @@ public class IntervalActivityHome extends AppCompatActivity {
         userInput2 = (EditText)findViewById(R.id.editText);
         userInput3 = (EditText)findViewById(R.id.editText);
         userInput4 = (EditText)findViewById(R.id.editText);
+        userInput5 = (EditText)findViewById(R.id.editText6);
+        userInput6 = (EditText)findViewById(R.id.editText7);
+        userInput7 = (EditText)findViewById(R.id.editText8);
+        userInput8 = (EditText)findViewById(R.id.editText4);
 
     }
 
     public void IntervalHomeDoItbutton(View view) {
         Intent toInterSet = new Intent(this,IntervalActivity.class);
         toInterSet.putExtra("SetIntervalName",userInput4.getText().toString());
+        toInterSet.putExtra("SetPrepare",userInput5.getText().toString());
+        toInterSet.putExtra("SetWorkOut",userInput6.getText().toString());
+        toInterSet.putExtra("SetRest",userInput7.getText().toString());
+        toInterSet.putExtra("SetLoop",userInput8.getText().toString());
         toInterSet.putExtra("addIntervalNameMarker",addIntervalName);
         startActivity(toInterSet);
     }
