@@ -116,21 +116,24 @@
         app:srcCompat="?android:attr/alertDialogIcon" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/ProfessorMagic"
         android:layout_width="426dp"
         android:layout_height="237dp"
+        android:onClick="ProfessorMagic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/professortabata_horror_" />
+        app:srcCompat="@drawable/professortabata_horror_"
+        tools:ignore="OnClick" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/ProfessorMagic2"
         android:layout_width="402dp"
         android:layout_height="226dp"
+        android:onClick="ProfessorMagic2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.379"
@@ -143,14 +146,15 @@
         android:id="@+id/HURRYHURRY"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Turn Back Now!!!"
         android:onClick="HURRYHURRY"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:text="説明する時間はない！早くここを押せ！"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
 
     <ImageView
         android:id="@+id/imageView13"
@@ -165,9 +169,10 @@
         app:srcCompat="?android:attr/alertDialogIcon" />
 
     <ImageView
-        android:id="@+id/imageView22"
+        android:id="@+id/TrueButton"
         android:layout_width="67dp"
         android:layout_height="64dp"
+        android:onClick="TrueButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.584"
