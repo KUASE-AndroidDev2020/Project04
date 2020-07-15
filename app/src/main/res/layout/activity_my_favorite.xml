@@ -150,9 +150,10 @@
 
     <TextView
         android:id="@+id/textView40"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#16B7F1"
+        android:layout_width="87dp"
+        android:layout_height="41dp"
+        android:background="@drawable/favorite_menu1"
+        android:gravity="center"
         android:text="menu1"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -164,9 +165,10 @@
 
     <TextView
         android:id="@+id/textView36"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#1D95E9"
+        android:layout_width="83dp"
+        android:layout_height="37dp"
+        android:background="@drawable/favorite_menu3"
+        android:gravity="center"
         android:text="menu3"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -192,9 +194,10 @@
 
     <TextView
         android:id="@+id/textView42"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#1CA7EE"
+        android:layout_width="83dp"
+        android:layout_height="42dp"
+        android:background="@drawable/favorite_menu2"
+        android:gravity="center"
         android:text="menu2"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -290,9 +293,10 @@
 
     <TextView
         android:id="@+id/textView26"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#1C7FE3"
+        android:layout_width="79dp"
+        android:layout_height="42dp"
+        android:background="@drawable/favorite_menu33"
+        android:gravity="center"
         android:text="menu3"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -304,9 +308,10 @@
 
     <TextView
         android:id="@+id/textView25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#1D95E9"
+        android:layout_width="79dp"
+        android:layout_height="44dp"
+        android:background="@drawable/favorite_menu22"
+        android:gravity="center"
         android:text="menu2"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -386,9 +391,10 @@
 
     <TextView
         android:id="@+id/textView18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#1D95E9"
+        android:layout_width="82dp"
+        android:layout_height="44dp"
+        android:background="@drawable/favorite_menu11"
+        android:gravity="center"
         android:text="menu1"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"

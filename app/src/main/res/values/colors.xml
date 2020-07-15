@@ -30,4 +30,12 @@
     <color name="stopwatchReset">#90be6d</color>
     <color name="stopwatchLap">#8338ec</color>
     <color name="stopwatchTimer">#8338ec</color>
+
+    <!-- My favourite button color -->
+    <color name="menu1">#80ffdb</color>
+    <color name="menu2">#72efdd</color>
+    <color name="menu3">#64dfdf</color>
+    <color name="menu1.1">#56cfe1</color>
+    <color name="menu2.2">#48bfe3</color>
+    <color name="menu3.3">#4ea8de</color>
 </resources>
