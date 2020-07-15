@@ -10,7 +10,7 @@
     <View
         android:id="@+id/view2"
         android:layout_width="302dp"
-        android:layout_height="76dp"
+        android:layout_height="69dp"
         android:background="#79DCE8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,19 +22,19 @@
     <View
         android:id="@+id/view5"
         android:layout_width="378dp"
-        android:layout_height="104dp"
+        android:layout_height="93dp"
         android:background="#00BCD4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.392" />
+        app:layout_constraintVertical_bias="0.402" />
 
     <View
         android:id="@+id/view6"
-        android:layout_width="297dp"
-        android:layout_height="81dp"
+        android:layout_width="298dp"
+        android:layout_height="68dp"
         android:background="#07B1C7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

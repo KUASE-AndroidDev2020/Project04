@@ -24,7 +24,7 @@
     <TextView
         android:id="@+id/TryAgainButton"
         android:layout_width="217dp"
-        android:layout_height="83dp"
+        android:layout_height="72dp"
         android:background="@drawable/quotes_button_try_again"
         android:gravity="center"
         android:onClick="TryAgainButton"
