@@ -8,6 +8,30 @@
     tools:context=".Easteregg">
 
     <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="426dp"
+        android:layout_height="237dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/professortabata_horror_" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="402dp"
+        android:layout_height="226dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.379"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/professortabata_horror_" />
+
+    <ImageView
         android:id="@+id/imageView20"
         android:layout_width="67dp"
         android:layout_height="64dp"
@@ -116,43 +140,6 @@
         app:srcCompat="?android:attr/alertDialogIcon" />
 
     <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="426dp"
-        android:layout_height="237dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/professortabata_horror_" />
-
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="402dp"
-        android:layout_height="226dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.379"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/professortabata_horror_" />
-
-    <Button
-        android:id="@+id/HURRYHURRY"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Turn Back Now!!!"
-        android:onClick="HURRYHURRY"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
         android:id="@+id/imageView13"
         android:layout_width="67dp"
         android:layout_height="64dp"
@@ -187,5 +174,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.668"
         app:srcCompat="?android:attr/alertDialogIcon" />
+
+    <Button
+        android:id="@+id/HURRYHURRY"
+        android:layout_width="371dp"
+        android:layout_height="149dp"
+        android:onClick="HURRYHURRY"
+        android:text="Turn Back Now!!!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

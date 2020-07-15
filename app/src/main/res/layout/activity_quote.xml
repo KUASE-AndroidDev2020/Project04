@@ -10,7 +10,7 @@
         android:id="@+id/textView5"
         android:layout_width="270dp"
         android:layout_height="68dp"
-        android:background="@drawable/quotes_button_are"
+        android:background="#a8dadc"
         android:gravity="center"
         android:text="Are you sure?"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
