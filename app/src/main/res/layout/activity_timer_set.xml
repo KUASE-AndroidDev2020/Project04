@@ -8,22 +8,24 @@
 
     <Button
         android:id="@+id/AddIntoMenu3Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="197dp"
+        android:layout_height="51dp"
+        android:background="@drawable/homebutton"
         android:onClick="AddIntoMenu3Button"
         android:text="Add into menu3"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.958" />
+        app:layout_constraintVertical_bias="0.963" />
 
     <Button
         android:id="@+id/AddIntoMenu2Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="198dp"
+        android:layout_height="50dp"
+        android:background="@drawable/homebutton"
         android:onClick="AddIntoMenu2Button"
         android:text="Add into menu2"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -113,8 +115,9 @@
 
     <Button
         android:id="@+id/AddIntoMenu1Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="194dp"
+        android:layout_height="55dp"
+        android:background="@drawable/homebutton"
         android:onClick="AddIntoMenu1Button"
         android:text="Add into menu1"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
