@@ -10,6 +10,7 @@ import android.os.Handler;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -61,6 +62,7 @@ public class StopWatchActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stop_watch);
 
+
         count = 0;
         period = 100;
 
@@ -69,6 +71,7 @@ public class StopWatchActivity extends AppCompatActivity {
 
         final Button startButton = findViewById(R.id.StopWatchStartButton);
         final Button lapButton = findViewById(R.id.LapButton);
+
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -80,50 +83,49 @@ public class StopWatchActivity extends AppCompatActivity {
 
         //タイマーストップ
         Button stopButton = findViewById(R.id.StopWatchStopButton);
-        stopButton.setOnClickListener(new View.OnClickListener(){
+        stopButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
+            public void onClick(View v) {
                 handler.removeCallbacks(runnable);
                 startButton.setEnabled(true);
-
+                lapButton.setEnabled(false);
 
 
             }
-        } );
+        });
 
         //タイマーラップ
 
         //final Button lapButton = findViewById(R.id.LapButton);
         timerLabel = findViewById(R.id.Timerlabel);
-        lapButton.setOnClickListener(new View.OnClickListener(){
-           @Override
-           public void onClick(View v){
-               // We want to show the exact time when the user click the lap button
-               // so just crab the text from timerText :p
-               timerLabel.setText(timerText.getText());
-               // If We want to show the exact timing when the user click the lap button
-               // just crab the text from timerText :p
-               // timerLabel.setText(timerText.getText());
+        lapButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // We want to show the exact time when the user click the lap button
+                // so just crab the text from timerText :p
+                timerLabel.setText(timerText.getText());
+                // If We want to show the exact timing when the user click the lap button
+                // just crab the text from timerText :p
+                // timerLabel.setText(timerText.getText());
 
-               // If we want to show the elapsed time in one lap, this is how we do it
-               lapPointNow = elapsedTotal;
-               // 二回目に00から引くことになる？
-               lapDiff = lapPointNow - lapPointPrevious;
-               timerLabel.setText(dataFormat.
-                       format(lapDiff));
-              lapPointPrevious = lapPointNow;
+                // If we want to show the elapsed time in one lap, this is how we do it
+                lapPointNow = elapsedTotal;
+                // 二回目に00から引くことになる？
+                lapDiff = lapPointNow - lapPointPrevious;
+                timerLabel.setText(dataFormat.
+                        format(lapDiff));
+                lapPointPrevious = lapPointNow;
 
-               //ラップ記録
-               //lapmemory = lapDiff;
-               //for (int i = 1; i < lapmemory; i++);
-               }
+                //ラップ記録
+                //lapmemory = lapDiff;
+                //for (int i = 1; i < lapmemory; i++);
+            }
         });
-
 
 
         // タイマーリセット
         Button resetButton = findViewById(R.id.StopWatchResetButton);
-        resetButton.setOnClickListener(new View.OnClickListener(){
+        resetButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 handler.removeCallbacks(runnable);
@@ -138,15 +140,16 @@ public class StopWatchActivity extends AppCompatActivity {
         });
     }
 
-    public void EasterEgg(View v) {
-        Intent toEasterEggactivity = new Intent(this,activity_EasterEgg.class);
-        startActivity(toEasterEggactivity);
 
 
-    }
 
     public void StopWatchBackHome(View view){
         Intent toBackHome = new Intent(this,MainActivity.class);
         startActivity(toBackHome);
+    }
+
+    public void EasterEgg(View view) {
+        Intent toEasteregg = new Intent(this,Easteregg.class);
+        startActivity(toEasteregg);
     }
 }
