@@ -189,16 +189,16 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.796" />
+        app:layout_constraintVertical_bias="0.77" />
 
     <ScrollView
-        android:layout_width="377dp"
-        android:layout_height="103dp"
+        android:layout_width="335dp"
+        android:layout_height="70dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.973">
+        app:layout_constraintVertical_bias="0.92">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -209,19 +209,20 @@
                 android:id="@+id/AddIntoMenu1Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#7EE1ED"
                 android:gravity="center"
-                android:text="Menu1"
                 android:onClick="AddIntoMenu1Button"
+                android:text="Menu1"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
             <TextView
                 android:id="@+id/AddIntoMenu2Button"
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
-                android:background="#FFFFFF"
+                android:background="#46D7EA"
                 android:gravity="center"
-                android:text="Menu2"
                 android:onClick="AddIntoMenu2Button"
+                android:text="Menu2"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                 tools:layout_editor_absoluteX="2dp"
                 tools:layout_editor_absoluteY="131dp" />
@@ -230,9 +231,10 @@
                 android:id="@+id/AddIntoMenu3Button"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:background="#05CAE3"
                 android:gravity="center"
-                android:text="Menu3"
                 android:onClick="AddIntoMenu3Button"
+                android:text="Menu3"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
         </LinearLayout>
     </ScrollView>
