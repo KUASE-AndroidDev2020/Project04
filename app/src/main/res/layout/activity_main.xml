@@ -25,7 +25,7 @@
         android:fontFamily="serif"
         android:text="SportsTimer"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
-        android:textColor="#BBDDEF"
+        android:textColor="#2EAAEC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
