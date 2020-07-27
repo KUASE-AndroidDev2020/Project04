@@ -17,14 +17,7 @@ import android.widget.Toast;
 import java.util.Locale;
 
 public class TimerActivity extends AppCompatActivity {
-/*
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_timer);
-    }
-*/
-
+    
     public void TimerBackHome(View view){
         Intent toBackHome = new Intent(this,MainActivity.class);
         startActivity(toBackHome);
@@ -44,6 +37,7 @@ public class TimerActivity extends AppCompatActivity {
     private long mStartTimeInMillis;
     private long mTimeLeftInMillis;
     private long mEndTime;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -133,8 +127,9 @@ public class TimerActivity extends AppCompatActivity {
         int hours = (int) (mTimeLeftInMillis / 1000) / 3600;
         int minutes = (int) ((mTimeLeftInMillis / 1000) % 3600) / 60;
         int seconds = (int) (mTimeLeftInMillis / 1000) % 60;
+        int milliseconds = (int) (mTimeLeftInMillis /100);
         String timeLeftFormatted;
-        timeLeftFormatted = String.format(Locale.getDefault(), "%02d:%02d:%02d", hours, minutes, seconds);
+        timeLeftFormatted = String.format(Locale.getDefault(), "%02d:%02d:%02d",  minutes, seconds, milliseconds);
         mTextViewCountDown.setText(timeLeftFormatted);
     }
 
