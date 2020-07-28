@@ -8,12 +8,14 @@
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="546dp"
-        android:layout_height="743dp"
+        android:layout_width="606dp"
+        android:layout_height="789dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fire"
-        tools:layout_editor_absoluteX="-82dp" />
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/fire" />
 
     <TextView
         android:id="@+id/textView5"
