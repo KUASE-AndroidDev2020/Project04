@@ -40,11 +40,12 @@ public class IntervalActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_interval);
-
+/*
         Bundle transferredData3 = getIntent().getExtras();
         if (transferredData3 != null) {
             addIntervalName = transferredData3.getBoolean("addIntervalNameMarker");
-            if (addIntervalName == true) {
+            if (addIntervalName == true){
+
                 //IntervalのPrepareを表示
                 accessData11 = (TextView) findViewById(R.id.textView43);
                 String s10 = transferredData3.getString("SetPrepare");
@@ -69,14 +70,15 @@ public class IntervalActivity extends AppCompatActivity{
                 accessData12 = (TextView) findViewById(R.id.textView39);
                 String s11 = transferredData3.getString("SetLoop");
                 accessData12.setText(s11);
+
             }
         }
 
         //mEditTextInput = findViewById(R.id.Input_timer);
-        mTextViewCountDown = findViewById(R.id.ClockOne);
-        mButtonSet = findViewById(R.id.TimerSetButton1);
-        mButtonStartPause = findViewById(R.id.StartButton);
-        mButtonReset = findViewById(R.id.TimerReset);
+        mTextViewCountDown = findViewById(R.id.Clock);
+        //mButtonSet = findViewById(R.id.TimerSetButton1);
+        mButtonStartPause = findViewById(R.id.IntervalStartButton);
+        //mButtonReset = findViewById(R.id.TimerReset);
 
         mButtonSet.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -228,11 +230,14 @@ public class IntervalActivity extends AppCompatActivity{
                 startTimer();
             }
         }
+
+ */
     }
+
+     
 
     public void GiveUpButton(View view){
         Intent toGoQuoteActivity = new Intent(this,QuoteActivity.class);
         startActivity(toGoQuoteActivity);
     }
-
 }

@@ -9,12 +9,12 @@ import android.widget.TextView;
 
 public class MyFavoriteActivity extends AppCompatActivity {
 
-    TextView accessData1;
-    TextView accessData2;
-    TextView accessData3;
-    TextView accessData4;
-    TextView accessData5;
-    TextView accessData6;
+    TextView accessData1;// menu1の時間表示
+    TextView accessData2;// menu1のActivity表示
+    TextView accessData3;// menu2の時間表示
+    TextView accessData4;// menu2のActivity表示
+    TextView accessData5;// menu3の時間表示
+    TextView accessData6;// menu3のActivity表示
     TextView accessData7;
     TextView accessData8;
     TextView accessData9;
@@ -31,10 +31,10 @@ public class MyFavoriteActivity extends AppCompatActivity {
 
         Bundle transferredData = getIntent().getExtras();
         // Execute the following lines only if there's data extracted from Intent
+
         if (transferredData != null) {
             // Get the value of the addTimer marker
             addTimer = transferredData.getBoolean("addTimerMarker");
-
             // if the marker is set to "true", that means new timer is added in TimerSetActivity.java
             // only extract timer data when addTimer marker is true
             // otherwise you'll get an error because you are trying to get data from null
@@ -75,6 +75,7 @@ public class MyFavoriteActivity extends AppCompatActivity {
                 // Bundle transferredData6 = getIntent().getExtras();
                 String s6 = transferredData.getString("activity3");
                 accessData6.setText(s6);
+
             }
         }
 
@@ -82,7 +83,6 @@ public class MyFavoriteActivity extends AppCompatActivity {
         if (transferredData2 != null) {
             addInterval = transferredData2.getBoolean("addIntervalMarker2");
             if (addInterval == true) {
-
                 //Intervalのmenu1表示
                 accessData7 = (TextView) findViewById(R.id.textView46);
                 String s7 = transferredData.getString("SetInterval1");
