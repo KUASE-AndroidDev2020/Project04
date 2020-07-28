@@ -54,14 +54,14 @@
         app:layout_constraintVertical_bias="0.90999997" />
 
     <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="333dp"
-        android:layout_height="420dp"
+        android:id="@+id/imageView12"
+        android:layout_width="321dp"
+        android:layout_height="557dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.276"
-        app:srcCompat="@drawable/matsuoka" />
+        app:layout_constraintVertical_bias="0.091"
+        app:srcCompat="@drawable/mastuoka2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

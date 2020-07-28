@@ -52,10 +52,10 @@ public class StopWatchActivity extends AppCompatActivity {
 
     private TextView timerText;
     private SimpleDateFormat dataFormat =
-            new SimpleDateFormat("mm:ss.S", Locale.US);
+            new SimpleDateFormat("mm:ss.SS", Locale.JAPAN);
 
 
-    private int count, period;
+    private long count, period;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
