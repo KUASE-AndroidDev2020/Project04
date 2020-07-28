@@ -7,6 +7,16 @@
     tools:context=".MyFavoriteActivity">
 
     <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="411dp"
+        android:layout_height="707dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/jamping_man" />
+
+    <ImageView
         android:id="@+id/IntervalDeleteButton3"
         android:layout_width="46dp"
         android:layout_height="43dp"
