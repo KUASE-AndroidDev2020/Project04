@@ -7,11 +7,21 @@
     tools:context=".IntervalActivity">
 
 
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hand_up_people" />
+
     <View
         android:id="@+id/view2"
         android:layout_width="285dp"
         android:layout_height="57dp"
-        android:background="#79DCE8"
+        android:background="#CCF9F9F9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.514"
@@ -23,7 +33,7 @@
         android:id="@+id/view5"
         android:layout_width="378dp"
         android:layout_height="77dp"
-        android:background="#00BCD4"
+        android:background="#CCF9F9F9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.484"
@@ -35,7 +45,7 @@
         android:id="@+id/view6"
         android:layout_width="378dp"
         android:layout_height="77dp"
-        android:background="#07B1C7"
+        android:background="#CCF9F9F9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.484"
@@ -91,7 +101,7 @@
         android:id="@+id/Clock"
         android:layout_width="199dp"
         android:layout_height="53dp"
-        android:background="#97E2EC"
+        android:background="#CC97E2EC"
         android:gravity="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -118,7 +128,7 @@
         android:id="@+id/PastTexFutureView"
         android:layout_width="199dp"
         android:layout_height="54dp"
-        android:background="#9BE1EA"
+        android:background="#CC9BE1EA"
         android:gravity="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
