@@ -43,7 +43,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.792" />
+        app:layout_constraintVertical_bias="0.915" />
 
     <Button
         android:id="@+id/TimerSetButton1"
@@ -58,7 +58,7 @@
         app:layout_constraintHorizontal_bias="0.801"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.907" />
+        app:layout_constraintVertical_bias="0.775" />
 
     <Button
         android:id="@+id/TimerReset"
@@ -70,10 +70,10 @@
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintHorizontal_bias="0.231"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.902" />
+        app:layout_constraintVertical_bias="0.776" />
 
     <Button
         android:id="@+id/TimerBackHome"
@@ -94,7 +94,7 @@
         android:id="@+id/ClockOne"
         android:layout_width="390dp"
         android:layout_height="136dp"
-        android:background="@drawable/round_button_green"
+        android:background="#CCF9F9F9"
         android:gravity="center_horizontal|center_vertical"
         android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
@@ -104,7 +104,7 @@
         app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Timer"
-        app:layout_constraintVertical_bias="0.037" />
+        app:layout_constraintVertical_bias="0.054" />
 
     <EditText
         android:id="@+id/Input_timer"
@@ -112,13 +112,15 @@
         android:layout_height="46dp"
         android:background="#CCE1DADA"
         android:ems="10"
+        android:gravity="center"
+        android:hint="enter time"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ClockOne"
-        app:layout_constraintVertical_bias="0.211" />
+        app:layout_constraintVertical_bias="0.41" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -145,7 +147,9 @@
         android:textColor="#000000"
         app:layout_constraintBottom_toTopOf="@+id/Input_timer"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ClockOne" />
+        app:layout_constraintTop_toBottomOf="@+id/ClockOne"
+        app:layout_constraintVertical_bias="0.813" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
