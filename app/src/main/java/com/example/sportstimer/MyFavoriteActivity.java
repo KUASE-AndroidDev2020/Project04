@@ -2,9 +2,14 @@ package com.example.sportstimer;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MyFavoriteActivity extends AppCompatActivity {
@@ -115,5 +120,51 @@ public class MyFavoriteActivity extends AppCompatActivity {
         Intent toFavoriteHome = new Intent(this, IntervalActivityHome.class);
         startActivity(toFavoriteHome);
     }
+/*
+// 保存1
+    }
+    public class SaveActivity extends Activity {
+        @Override
+        public void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_my_favorite);
+
+            Button saveButton = (Button) findViewById(R.id.MyFavoriteSaveButton);
+            saveButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View arg0) {
+                    saveButtonClick();
+                }
+            });
+
+            Button loadButton = (Button) findViewById(R.id.LoadButton);
+            loadButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View arg0) {
+                    loadButtonClick();
+                }
+            });
+        }
+    }
+
+    private void saveButtonClick() {
+        // 保存
+        EditText editText = (EditText) findViewById(R.id.Test);
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
+        sp.edit().putString("SaveString", editText.getText().toString()).commit();
+
+    }
+    private void loadButtonClick() {
+        // 読み込み
+        EditText editText = (EditText) findViewById(R.id.Test);
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
+        editText.setText(sp.getString("SaveString", null), TextView.BufferType.NORMAL);
+    }
+
+
+ */
+
+
 }
+
 
