@@ -43,6 +43,7 @@ public class TimerActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timer);
+
         mEditTextInput = findViewById(R.id.Input_timer);
         mTextViewCountDown = findViewById(R.id.ClockOne);
         mButtonSet = findViewById(R.id.TimerSetButton1);
@@ -124,12 +125,12 @@ public class TimerActivity extends AppCompatActivity {
     }
 
     private void updateCountDownText() {
-        int hours = (int) (mTimeLeftInMillis / 1000) / 3600;
+        //int hours = (int) (mTimeLeftInMillis / 1000) / 3600;
         int minutes = (int) ((mTimeLeftInMillis / 1000) % 3600) / 60;
         int seconds = (int) (mTimeLeftInMillis / 1000) % 60;
-        int milliseconds = (int) (mTimeLeftInMillis /100);
+        //int milliseconds = (int) (mTimeLeftInMillis /100);
         String timeLeftFormatted;
-        timeLeftFormatted = String.format(Locale.getDefault(), "%02d:%02d:%02d",  minutes, seconds, milliseconds);
+        timeLeftFormatted = String.format(Locale.getDefault(), "%02d:%02d",  minutes, seconds);
         mTextViewCountDown.setText(timeLeftFormatted);
     }
 

@@ -12,7 +12,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import java.util.Locale;
 
 public class IntervalActivity extends AppCompatActivity {
@@ -34,7 +33,6 @@ public class IntervalActivity extends AppCompatActivity {
         if (transferredData3 != null) {
             addIntervalName = transferredData3.getBoolean("addIntervalNameMarker");
             if (addIntervalName == true) {
-
                 //IntervalのPrepareを表示
                 accessData11 = (TextView) findViewById(R.id.textView43);
                 String s10 = transferredData3.getString("SetPrepare");
@@ -59,12 +57,11 @@ public class IntervalActivity extends AppCompatActivity {
                 accessData12 = (TextView) findViewById(R.id.textView39);
                 String s11 = transferredData3.getString("SetLoop");
                 accessData12.setText(s11);
-
-                }
             }
         }
+    }
 
-        public void GiveUpButton (View view){
+    public void GiveUpButton (View view){
         Intent toGoQuoteActivity = new Intent(this, QuoteActivity.class);
         startActivity(toGoQuoteActivity);
     }
