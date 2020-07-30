@@ -20,11 +20,10 @@ public class TimerSetActivity extends AppCompatActivity {
     EditText userInput4;
     EditText userInput5;
     EditText userInput6;
+
     Boolean addTimer = true;
 
-
     @Override
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timer_set);
@@ -34,8 +33,6 @@ public class TimerSetActivity extends AppCompatActivity {
         userInput4 = (EditText) findViewById(R.id.editText3);
         userInput5 = (EditText) findViewById(R.id.editText2);
         userInput6 = (EditText) findViewById(R.id.editText3);
-
-
     }
 
     public void AddIntoMenu1Button(View v) {
@@ -61,7 +58,6 @@ public class TimerSetActivity extends AppCompatActivity {
         toMyFavorite2.putExtra("addTimerMarker", addTimer);
         startActivity(toMyFavorite2);
     }
-
 
     public void SetTimerBackHomeButton(View view) {
         Intent toBackHome = new Intent(this, MainActivity.class);

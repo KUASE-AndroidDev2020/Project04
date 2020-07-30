@@ -33,10 +33,7 @@ public class StopWatchActivity extends AppCompatActivity {
     private Runnable runnable = new Runnable() {
         @Override
         public void run() {
-
-
             count ++;
-
 
             timerText.setText(dataFormat.
                     format(count*period));
@@ -45,7 +42,6 @@ public class StopWatchActivity extends AppCompatActivity {
             // We need to use total elapsed time to calculate lap
             elapsedTotal = count*period;
 
-
         }
     };
     private TextView timerLabel;
@@ -53,10 +49,6 @@ public class StopWatchActivity extends AppCompatActivity {
     private TextView timerText;
     private SimpleDateFormat dataFormat =
             new SimpleDateFormat("mm:ss.S", Locale.JAPAN);
-
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
