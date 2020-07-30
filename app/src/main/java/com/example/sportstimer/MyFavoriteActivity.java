@@ -121,7 +121,7 @@ public class MyFavoriteActivity extends AppCompatActivity {
         startActivity(toFavoriteHome);
     }
 /*
-// 保存1
+// 保存チャレンジ
     }
     public class SaveActivity extends Activity {
         @Override
@@ -160,11 +160,7 @@ public class MyFavoriteActivity extends AppCompatActivity {
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
         editText.setText(sp.getString("SaveString", null), TextView.BufferType.NORMAL);
     }
-
-
  */
-
-
 }
 
 

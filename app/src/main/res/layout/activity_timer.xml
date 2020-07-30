@@ -140,7 +140,7 @@
         android:id="@+id/textView33"
         android:layout_width="154dp"
         android:layout_height="43dp"
-        android:background="#CCE1DADA"
+        android:background="#00E1DADA"
         android:gravity="center"
         android:text="1 = 1 Minute"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
