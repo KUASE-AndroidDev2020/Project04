@@ -32,11 +32,18 @@ public class StopWatchActivity extends AppCompatActivity {
     private long lapPointNow;
     private long lapDiff;
     private long lapmemory;
+    private long startTime;
 
     private Runnable runnable = new Runnable() {
         @Override
         public void run() {
+             startTime = System.currentTimeMillis();
+
+
             count ++;
+
+
+
             timerText.setText(dataFormat.
                     format(count*period));
             handler.postDelayed(this, period);
@@ -52,10 +59,10 @@ public class StopWatchActivity extends AppCompatActivity {
 
     private TextView timerText;
     private SimpleDateFormat dataFormat =
-            new SimpleDateFormat("mm:ss.SS", Locale.JAPAN);
+            new SimpleDateFormat("mm:ss.S", Locale.JAPAN);
 
 
-    private long count, period;
+    private int count, period;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
