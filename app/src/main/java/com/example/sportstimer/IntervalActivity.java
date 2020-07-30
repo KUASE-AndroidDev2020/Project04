@@ -15,7 +15,6 @@ import android.widget.Toast;
 import java.util.Locale;
 
 public class IntervalActivity extends AppCompatActivity {
-
     TextView accessData8;
     TextView accessData9;
     TextView accessData10;
@@ -32,9 +31,7 @@ public class IntervalActivity extends AppCompatActivity {
     private long mStartTimeInMillis;
     private long mTimeLeftInMillis;
     private long mEndTime;
-
  */
-
     boolean addIntervalName = false;
 
     @Override
@@ -140,6 +137,7 @@ public class IntervalActivity extends AppCompatActivity {
                 mTimerRunning = false;
                 updateWatchInterface();
             }
+
         }.start();
         mTimerRunning = true;
         updateWatchInterface();
@@ -235,9 +233,11 @@ public class IntervalActivity extends AppCompatActivity {
             }
         }
     }
-     */
+    */
+
     public void GiveUpButton (View view){
         Intent toGoQuoteActivity = new Intent(this, QuoteActivity.class);
         startActivity(toGoQuoteActivity);
     }
+
 }
