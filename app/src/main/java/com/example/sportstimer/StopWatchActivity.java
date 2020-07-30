@@ -4,14 +4,11 @@ package com.example.sportstimer;
 import androidx.appcompat.app.AppCompatActivity;
 //import android.support.v7.app.AppCompatActivity;
 
-import android.app.AutomaticZenRule;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
@@ -21,7 +18,7 @@ import java.util.Locale;
 
 public class StopWatchActivity extends AppCompatActivity {
 
-    private Handler handler = new Handler();
+    private final Handler handler = new Handler();
 
     //private long startTime;
     //private long elapsedTime = 0l;
@@ -31,17 +28,14 @@ public class StopWatchActivity extends AppCompatActivity {
     private long lapPointPrevious;
     private long lapPointNow;
     private long lapDiff;
-    private long lapmemory;
-    private long startTime;
+    private long count, period;
 
     private Runnable runnable = new Runnable() {
         @Override
         public void run() {
-             startTime = System.currentTimeMillis();
 
 
             count ++;
-
 
 
             timerText.setText(dataFormat.
@@ -55,14 +49,14 @@ public class StopWatchActivity extends AppCompatActivity {
         }
     };
     private TextView timerLabel;
-    private ListView listView;
 
     private TextView timerText;
     private SimpleDateFormat dataFormat =
             new SimpleDateFormat("mm:ss.S", Locale.JAPAN);
 
 
-    private int count, period;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +66,7 @@ public class StopWatchActivity extends AppCompatActivity {
 
         count = 0;
         period = 100;
+
 
         timerText = findViewById(R.id.Timer);
         timerText.setText(dataFormat.format(0));
