@@ -20,7 +20,7 @@ public class IntervalActivity extends AppCompatActivity {
     TextView accessData10;
     TextView accessData11;
     TextView accessData12;
-/*
+
     private EditText mEditTextInput;
     private TextView mTextViewCountDown;
     private Button mButtonSet;
@@ -31,7 +31,7 @@ public class IntervalActivity extends AppCompatActivity {
     private long mStartTimeInMillis;
     private long mTimeLeftInMillis;
     private long mEndTime;
- */
+
     boolean addIntervalName = false;
 
     @Override
@@ -52,12 +52,12 @@ public class IntervalActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String input = mEditTextInput.getText().toString();
                 if (input.length() == 0) {
-                    Toast.makeText(TimerActivity.this, "Field can't be empty", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(IntervalActivity.this, "Field can't be empty", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 long millisInput = Long.parseLong(input) * 60000;
                 if (millisInput == 0) {
-                    Toast.makeText(TimerActivity.this, "Please enter a positive number", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(IntervalActivity.this, "Please enter a positive number", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 setTime(millisInput);
