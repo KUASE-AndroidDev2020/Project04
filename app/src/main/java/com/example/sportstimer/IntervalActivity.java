@@ -116,6 +116,7 @@ public class IntervalActivity extends AppCompatActivity {
         }
     }
 
+    //also error
     /*
     private void setTime(long milliseconds) {
         mStartTimeInMillis = milliseconds;
